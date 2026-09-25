@@ -14,3 +14,7 @@
 .type-card{isolation:isolate;overflow:hidden}.rot-card-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:47% center;z-index:0}.type-card:has(.rot-card-image)::before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,13,24,.97),rgba(8,13,24,.48) 58%,rgba(8,13,24,.08));z-index:1}.rot-list-art{width:100%;aspect-ratio:1.45;object-fit:cover}.rot-poster{margin:0;background:#101923}.rot-poster img{width:100%;height:auto}
 
 .type-card > span,.type-card > h3,.type-card > p{position:relative;z-index:2}.type-card > b{z-index:2}
+
+/* Studio mark and independently sized wordmark. */
+.brand{gap:.4rem;letter-spacing:normal}.brand-mark{display:block;width:56px;height:66px;overflow:hidden;flex:none}.brand-mark img{width:174px;max-width:none;height:auto;position:relative;left:-7px;top:-23px;mix-blend-mode:multiply}.brand-name{font-size:1.28rem;line-height:1.15;font-weight:700;letter-spacing:.005em;color:#256cb4;white-space:nowrap}
+@media(max-width:480px){.brand-mark{width:51px;height:60px}.brand-mark img{width:159px;left:-6px;top:-21px}.brand-name{font-size:1.12rem}}
