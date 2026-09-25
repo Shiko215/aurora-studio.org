@@ -9,3 +9,8 @@
 .brand-art{display:block;width:210px;height:78px;overflow:hidden;flex:none}
 .brand-art img{width:220px;max-width:none;height:auto;position:relative;left:-5px;top:-34px;mix-blend-mode:multiply}
 @media(max-width:480px){.brand-art{width:178px;height:67px}.brand-art img{width:187px;left:-4px;top:-29px}}
+
+/* Revenant of Tsushima campaign artwork across the project pages. */
+.type-card{isolation:isolate;overflow:hidden}.rot-card-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:47% center;z-index:0}.type-card:has(.rot-card-image)::before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,13,24,.97),rgba(8,13,24,.48) 58%,rgba(8,13,24,.08));z-index:1}.rot-list-art{width:100%;aspect-ratio:1.45;object-fit:cover}.rot-poster{margin:0;background:#101923}.rot-poster img{width:100%;max-height:760px;object-fit:contain}
+
+.type-card > span,.type-card > h3,.type-card > p{position:relative;z-index:2}.type-card > b{z-index:2}
