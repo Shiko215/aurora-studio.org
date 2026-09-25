@@ -1,3 +1,6 @@
 User-agent: *
 Allow: /
+
+# Search and AI discovery crawlers are permitted under the general rule above.
+# Keep public pages crawlable and point crawlers to the canonical sitemap.
 Sitemap: https://www.aurora-studio.org/sitemap.xml
