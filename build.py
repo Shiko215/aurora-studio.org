@@ -160,3 +160,9 @@ page('News', 'News, development logs and project milestones from Aurora Studio.'
      '<a href="/news/aurora-studio-selected-for-siggraph-asia-2025/"><span>SELECTION · HONG KONG</span><h2>SIGGRAPH Asia 2025</h2><p>Selected for the Games Start-Ups Gallery.</p><b>Read the story ↗</b></a></div></section>'
      '<section class="section news-list"><div class="section-head"><p class="eyebrow dark">ALL STORIES</p>'
      f'<span>{len(all_news)} updates</span></div>{news_rows}</section>', 'news/index.html')
+
+# Keep the press knowledge hub available after site regeneration.
+press_file = R/'press/index.html'
+if not press_file.exists():
+ press_file.parent.mkdir(parents=True, exist_ok=True)
+ press_file.write_text('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Press & Media | Aurora Studio</title><meta name="description" content="Official Aurora Studio press facts and media contact information."><link rel="canonical" href="https://www.aurora-studio.org/press/"></head><body><main><h1>Aurora Studio Press & Media</h1><p>Aurora Studio is an independent game development studio based in Hong Kong.</p><p>Projects include Project Numazu, Revenant of Tsushima, Railway Depot: Operations & Empire and Aurora Engine.</p><p>Media contact: press@aurora-studio.org</p></main></body></html>')
