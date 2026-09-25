@@ -1,7 +1,16 @@
 # Aurora Studio website
 
-Static, dependency-free studio site intended for Cloudflare Pages. Build command: none. Output directory: `/` (repository root). Keep the repository private if desired; connect it via Cloudflare Pages Git integration.
+Static website for Aurora Studio. No package installation or build command is required. Deploy the repository root (`.`) as the public output directory.
 
-The site includes Home, Projects, Project Numazu, About, News and Contact. `assets/` contains supplied game screenshots. Do not add invoices, settlement spreadsheets or internal test PDFs to this public deployment.
+## Site map
 
-Before changing DNS, verify the Pages preview, then add both `aurora-studio.org` and `www.aurora-studio.org` as custom domains in Cloudflare Pages. Review any existing DNS records for other subdomains and email before editing. The original Squarespace site and its article archive should remain available until migration is checked. Remaining historical news URLs require separate restoration.
+- `/` — English home; `/project/`, `/about/`, `/news/`, `/contact/` — main pages.
+- `/project/project-numazu/`, `/project/revenant-of-tsushima/`, `/project/railway-depot/`, `/project/aurora-engine/` — project pages.
+- `/zh-hant/`, `/zh-hans/`, `/ja/`, `/ko/` — translated core landing pages. The deeper English articles are not yet translated.
+- Selected old news slugs have clearly labeled migration summaries; the full archive has not been restored.
+
+`build.py` and `localize.py` generate the checked-in HTML pages. Run `python build.py && python localize.py` from this directory after editing their source copy. Regenerate `sitemap.xml` when routes change.
+
+Only public game screenshots belong in `assets/`. Keep contracts, invoices, settlement spreadsheets and internal test documents outside this repository.
+
+The existing `CNAME` file is controlled separately and is preserved. Review the deployment preview and current DNS, email and subdomain records before routing `aurora-studio.org` or `www.aurora-studio.org` to a new host.
