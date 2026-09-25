@@ -1,7 +1,7 @@
 from pathlib import Path
 from html import escape
 R=Path(__file__).parent
-nav='<a href="/">Home</a><a href="/project/">Projects</a><a href="/services/">Services</a><a href="/news/">News</a><a href="/about/">About</a><a href="/contact/">Contact</a>'
+nav='<a href="/">Home</a><a href="/project/">Projects</a><a href="/services/">Services</a><a href="/news/">News</a><a href="/about/">About</a><a href="/press/">Press</a><a href="/contact/">Contact</a>'
 languages='<div class="lang"><a href="/" lang="en">EN</a><a href="/zh-hant/" lang="zh-Hant">繁</a><a href="/zh-hans/" lang="zh-Hans">简</a><a href="/ja/" lang="ja">日</a><a href="/ko/" lang="ko">한</a></div>'
 def page(title,description,content,filename):
  alternates = '<link rel="alternate" hreflang="en" href="https://www.aurora-studio.org/"><link rel="alternate" hreflang="zh-Hant" href="https://www.aurora-studio.org/zh-hant/"><link rel="alternate" hreflang="zh-Hans" href="https://www.aurora-studio.org/zh-hans/"><link rel="alternate" hreflang="ja" href="https://www.aurora-studio.org/ja/"><link rel="alternate" hreflang="ko" href="https://www.aurora-studio.org/ko/">' if filename == 'index.html' else ''
