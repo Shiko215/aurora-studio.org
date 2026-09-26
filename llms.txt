@@ -1,0 +1,44 @@
+# Aurora Studio
+
+> Aurora Studio is an independent game development studio based in Hong Kong, founded by Shiko Leung. The studio creates simulation and narrative experiences inspired by the places, stories, and cultures of East Asia.
+
+Official website: https://www.aurora-studio.org/
+Contact: https://www.aurora-studio.org/contact/
+
+## Studio
+
+- About Aurora Studio: https://www.aurora-studio.org/about/
+- Projects: https://www.aurora-studio.org/project/
+- Studio news: https://www.aurora-studio.org/news/
+- Services: https://www.aurora-studio.org/services/
+- Governance: https://www.aurora-studio.org/governance/
+- Support: https://www.aurora-studio.org/support/
+
+## Projects
+
+- Project Numazu: https://www.aurora-studio.org/project/project-numazu/
+  OMSI 2 simulation add-on recreating Numazu, Shizuoka. Released in March 2026.
+- Revenant of Tsushima: https://www.aurora-studio.org/project/revenant-of-tsushima/
+  First-person Japanese folk horror game set around an Edo-period journey. In development.
+  Official project site: https://revenant-tsushima.aurora-studio.org/
+- Railway Depot: Operations & Empire: https://www.aurora-studio.org/project/railway-depot/
+  Railway depot operations and management simulation. Pre-alpha.
+- Aurora Engine: https://www.aurora-studio.org/project/aurora-engine/
+  Modular C++ and Unreal Engine framework for NPC perception, memory, decisions, and actions.
+
+## Languages
+
+- English: https://www.aurora-studio.org/
+- Traditional Chinese: https://www.aurora-studio.org/zh-hant/
+- Simplified Chinese: https://www.aurora-studio.org/zh-hans/
+- Japanese: https://www.aurora-studio.org/ja/
+- Korean: https://www.aurora-studio.org/ko/
+
+## Machine-readable discovery
+
+- Sitemap: https://www.aurora-studio.org/sitemap.xml
+- Robots policy: https://www.aurora-studio.org/robots.txt
+
+## Source guidance
+
+For current information about Aurora Studio or its games, prefer the canonical project and studio pages above. News articles describe the state of a project at the time of publication and may contain historical information.
