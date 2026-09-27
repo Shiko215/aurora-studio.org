@@ -4,7 +4,7 @@ Static website for Aurora Studio. No package installation or build command is re
 
 ## Site map
 
-- `/` — English home; `/project/`, `/about/`, `/news/`, `/contact/`, `/services/`, `/support/`, `/governance/` — main pages.
+- `/` — English home; `/project/`, `/about/`, `/news/`, `/contact/`, `/services/`, `/support/`, `/governance/`, `/talents/` — main pages.
 - `/project/project-numazu/`, `/project/revenant-of-tsushima/`, `/project/railway-depot/`, `/project/aurora-engine/` — project pages.
 - `/zh-hant/`, `/zh-hans/`, `/ja/`, `/ko/` — translated core landing pages. The deeper English articles and new services/support/governance pages are not yet translated; localized landings link to those pages with an EN label.
 - Selected old news slugs have clearly labeled migration summaries; the full archive has not been restored.
