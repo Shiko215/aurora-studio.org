@@ -213,7 +213,30 @@ for item in news_updates:
     page(item['title'], item['summary'], content, f'news/{item["slug"]}/index.html',
          news_schema(item['title'], article_url, item['summary'], item['date'], item['image'] or None))
 
+acg_news_title = 'Aurora Studio launches cross-border ACG partnership service'
+acg_news_summary = 'A Hong Kong-based practice helps brands and venues shape ACG collaborations across the Greater Bay Area, Japan and international markets.'
+acg_news_url = 'https://www.aurora-studio.org/news/acg-partnerships-launch/'
+page(acg_news_title, acg_news_summary,
+     '''<section class="page-heading news-heading"><p class="eyebrow dark">STUDIO ANNOUNCEMENT · <time datetime="2026-09-28">28 SEPTEMBER 2026</time></p>
+     <h1 class="article-title">Aurora Studio launches cross-border ACG partnership service.</h1>
+     <p>Connecting the right creative idea with the right market.</p></section>
+     <article class="section article">
+     <p><strong>HONG KONG, 28 September 2026</strong> — Aurora Studio has launched an ACG partnership strategy and local production service for brands, venues, tourism and cultural teams, game publishers and entertainment businesses seeking to connect Hong Kong and the Greater Bay Area with Japan and international creative markets.</p>
+     <p>The service helps clients turn an initial objective into a proposal that potential collaborators can evaluate. Work can include audience and IP fit, partnership concepts, campaign formats, commercial briefs, outreach to prospective rights holders where appropriate, localization, local activation planning, and creator and media coordination.</p>
+     <p>Possible formats range from pop-ups and exhibitions to retail, food and beverage concepts, fan experiences and interactive campaigns. Each proposal is scoped around its audience, venue, schedule, budget, rights and production requirements. Aurora Studio works with suitable production partners where a project calls for specialist delivery.</p>
+     <p>The practice builds on Aurora Studio's experience in game development, international publishing communication and cross-market promotion. Its OMSI 2 add-on <a href="/project/project-numazu/">Project Numazu</a> is a public example of a place-based project developed for audiences across markets, with creator activity and coverage in Japanese and Taiwanese game media.</p>
+     <p>Prospective clients can begin by sharing the audience they want to reach, the proposed location and campaign window, an indicative budget range, and the intended outcome. The studio will then discuss a defined discovery or production brief before any approach to a rights holder or vendor.</p>
+     <p><strong>About Aurora Studio</strong><br>Aurora Studio is an independent game development studio based in Hong Kong. It creates simulation and narrative experiences inspired by the places and stories of East Asia, and undertakes selected creative and cross-border collaborations.</p>
+     <p><strong>Press and partnership enquiries:</strong> <a href="mailto:press@aurora-studio.org">press@aurora-studio.org</a></p>
+     <p><small>All IP, talent and brand collaborations depend on the relevant rights holders' interest, approvals, availability and agreed commercial terms. Aurora Studio does not represent or guarantee access to any third-party IP.</small></p>
+     <div class="article-links"><a href="/acg-partnerships/">Explore the partnership service ↗</a><a href="/news/">← All news</a></div>
+     </article>''',
+     'news/acg-partnerships-launch/index.html',
+     news_schema(acg_news_title, acg_news_url, acg_news_summary, '2026-09-28'))
+
 archive = [
+    ('2026-09-28', 'Studio announcement', acg_news_title,
+     acg_news_summary, '/news/acg-partnerships-launch/'),
     ('2026-09-17', 'Project update', 'A Day in the Depot: Railway Depot: Operations & Empire',
      'A closer look at the people and decisions behind a working depot.', '/news/a-day-in-the-depot/'),
     ('2026-09-04', 'Studio update', 'Project Numazu TGA 2026 For Your Consideration campaign',
@@ -232,11 +255,11 @@ news_rows = ''.join(
 page('News', 'News, development logs and project milestones from Aurora Studio.',
      '<section class="page-heading news-heading"><p class="eyebrow dark">FROM THE STUDIO</p>'
      '<h1>Studio news<span class="dot">.</span></h1><p>Releases, exhibitions, selections and notes from the worlds we are building.</p></section>'
-     '<section class="section news-feature"><div><p class="eyebrow dark">LATEST PLAYABLE MILESTONE</p>'
-     '<h2>Revenant of Tsushima opens its vertical slice public test.</h2>'
-     '<p>Step into an early build of our first-person folk horror project and help us refine its rituals, atmosphere and exploration.</p>'
-     '<a href="/news/revenant-of-tsushima-vertical-slice-public-test/">Read the update ↗</a></div>'
-     '<img src="/assets/revenant-cover-clean.jpg" alt="Revenant of Tsushima key art" loading="lazy"></section>'
+      '<section class="section news-feature"><div><p class="eyebrow dark">NEW STUDIO SERVICE</p>'
+      '<h2>ACG partnerships across borders.</h2>'
+      '<p>We help brands and venues develop proposals connecting Hong Kong and the Greater Bay Area with Japan and international creative markets.</p>'
+      '<a href="/news/acg-partnerships-launch/">Read the announcement ↗</a></div>'
+      '<img src="/assets/numazu-route.jpg" alt="A Project Numazu streetscape" loading="lazy"></section>'
      '<section class="section event-news"><div class="section-head"><p class="eyebrow dark">ON THE WORLD STAGE</p><span>2025 / PROJECT NUMAZU</span></div>'
      '<div class="event-grid"><a href="/news/aurora-studio-in-tgs-2025/"><span>EXHIBITION · TOKYO</span><h2>Tokyo Game Show 2025</h2><p>Project Numazu was featured with Aerosoft in the German Pavilion.</p><b>Read the story ↗</b></a>'
      '<a href="/news/aurora-studio-selected-for-siggraph-asia-2025/"><span>SELECTION · HONG KONG</span><h2>SIGGRAPH Asia 2025</h2><p>Selected for the Games Start-Ups Gallery.</p><b>Read the story ↗</b></a></div></section>'
