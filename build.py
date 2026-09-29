@@ -137,7 +137,59 @@ news_items=[
 ('project-numazu-is-officially-available-on-steam','Project Numazu is available on Steam','2026-03-30','Release','The OMSI 2 add-on brings a detailed recreation of Numazu, Shizuoka, to bus simulation players. It is Aurora Studio’s first commercial release.','/project/project-numazu/'),
 ('omsi-2-add-on-project-numazu-steam-page-now-live','Project Numazu Steam page goes live','2025-12-01','Project update','The store page introduced Project Numazu’s Japanese bus simulation, city streets and coastal atmosphere ahead of its March 2026 release.','/project/project-numazu/'),
 ('project-numazu-tga-2026-fyc','Project Numazu begins a TGA 2026 For Your Consideration campaign','2026-09-04','Studio update','Aurora Studio announced a campaign for consideration in The Game Awards 2026 Best Sim / Strategy category. This is a campaign announcement; it does not indicate a nomination.','/project/project-numazu/')]
+tga_content = '''
+<section class="page-heading"><p class="eyebrow dark">STUDIO UPDATE · <time datetime="2026-09-04">4 SEPTEMBER 2026</time></p><h1 class="article-title">Project Numazu begins a TGA 2026 For Your Consideration campaign</h1><p>Restored campaign announcement · clarification added <time datetime="2026-09-29">29 September 2026</time></p></section>
+<article class="section article">
+<p class="archive-label">Aurora Studio · Project Numazu</p>
+<nav aria-label="Article language"><a href="#english">English</a><a href="#traditional-chinese" lang="zh-Hant">繁體中文</a><a href="#japanese" lang="ja">日本語</a></nav>
+<figure style="margin:2rem 0"><img src="/assets/numazu-buses.jpg" loading="lazy" style="width:100%;height:auto;display:block" alt="Project Numazu Japanese bus simulation environment"></figure>
+<section id="english" lang="en">
+<h2>Project Numazu · For Your Consideration</h2>
+<p class="archive-label">Campaign announcement · 4 September 2026</p>
+<p>Aurora Studio is putting <strong>OMSI 2 Add-on: Project Numazu</strong> forward for consideration in The Game Awards 2026 <strong>Best Sim / Strategy</strong> category. This is an independent For Your Consideration (FYC) outreach campaign, not an official nomination or selection.</p>
+<p>Project Numazu recreates the daily streets, local bus operations, landmarks and coastal atmosphere of Numazu, Shizuoka. We invite simulation media, journalists and content creators to explore our work, and we welcome continued coverage and constructive feedback.</p>
+<p>We thank everyone who has supported Project Numazu since its commercial launch in March 2026. Independent production work on the Uchiura and wider Izu areas continues as part of our future direction. This does not constitute a confirmed Steam update or release schedule.</p>
+<p>For review information, please contact <a href="mailto:press@aurora-studio.org">press@aurora-studio.org</a>. You can also explore our <a href="/project/project-numazu/">project page</a> and <a href="/media/#numazu">press and media materials</a>.</p>
+<h2 id="development-update">Development and free-update clarification</h2>
+<p class="archive-label">Editorial clarification · added 29 September 2026</p>
+<p><strong>Aurora Studio has not announced the abandonment of Project Numazu.</strong> Our <a href="https://www.aurora-studio.org/news/official-statement-aurora-studio-announcement-of-project-numazu-engzhjp">official statement of 10 August 2026</a> outlined our intention to resume long-term updates, including work on N24, 長11, 沼71, 沼72 and 沼74, as well as further Numazu-area development.</p>
+<p>Our studio is willing to prepare further improvements and aims to make future DLC updates available <strong>free of additional charge to existing owners</strong>, subject to the applicable publishing arrangements. This is a statement of our development intention, not a promise of an approved build or fixed release date.</p>
+<p>As described in our earlier update workflow, new builds are intended to go through QA and community feedback before Steam distribution is coordinated with our German publisher, Aerosoft. Technical readiness and publisher coordination affect when an update can be released. No release date is confirmed at present.</p>
+<p>We appreciate specific, reproducible bug reports and constructive suggestions. Please send product feedback to <a href="mailto:support@aurora-studio.org">support@aurora-studio.org</a>. This clarification reflects Aurora Studio's own position, and is not a statement on behalf of the publisher.</p>
+</section>
+<hr style="margin:3rem 0;border:0;border-top:1px solid #b8c6c8">
+<section id="traditional-chinese" lang="zh-Hant">
+<h2>繁體中文 · TGA 2026 推薦考慮宣傳</h2>
+<p class="archive-label">2026 年 9 月 4 日公告</p>
+<p>曙光工坊 Aurora Studio 以《OMSI 2 Add-on: Project Numazu》展開 The Game Awards 2026「Best Sim / Strategy」項目的 For Your Consideration（FYC）宣傳。這是工作室自主進行的作品推介，<strong>不代表作品已獲正式提名或入圍</strong>。</p>
+<p>我們感謝自 2026 年 3 月發售以來支持沼津地圖的玩家、媒體和創作者，歡迎大家繼續報導、試玩及提出具體建議。內浦與伊豆地區的獨立開發工作將繼續推進，但不代表 Steam 版本已有確定更新日期。</p>
+<h3>後續免費更新說明</h3>
+<p class="archive-label">2026 年 9 月 29 日新增說明</p>
+<p><strong>曙光工坊並未宣布放棄《Project Numazu》。</strong>我們在 <a href="https://www.aurora-studio.org/news/official-statement-aurora-studio-announcement-of-project-numazu-engzhjp">8 月 10 日官方公告</a> 已表達重啟長期更新的意願，列出 N24、長11、沼71、沼72、沼74 等開發方向。</p>
+<p>工作室願意製作進一步改善內容，並希望在適用的發行安排下，<strong>為現有 DLC 玩家提供毋須額外付費的後續更新</strong>。新版本預定先經 QA 測試及玩家意見收集，再與德國發行商 Aerosoft 協調提交 Steam。目前未能確認正式更新日期，亦不代表任何特定版本已獲發行批准。</p>
+<p>錯誤報告及改善建議歡迎寄至 <a href="mailto:support@aurora-studio.org">support@aurora-studio.org</a>。</p>
+</section>
+<hr style="margin:3rem 0;border:0;border-top:1px solid #b8c6c8">
+<section id="japanese" lang="ja">
+<h2>日本語 · TGA 2026 For Your Consideration</h2>
+<p class="archive-label">2026年9月4日発表</p>
+<p>Aurora Studioは、『OMSI 2 Add-on: Project Numazu』について、The Game Awards 2026「Best Sim / Strategy」部門へのFor Your Consideration（FYC）広報活動を開始しました。<strong>スタジオ独自の広報活動であり、正式なノミネートや選出を発表するものではありません。</strong></p>
+<p>2026年3月の発売以来、作品を支えてくださったプレイヤー、メディア、クリエイターの皆様に感謝申し上げます。内浦・伊豆方面の制作も独自に継続する方針ですが、Steam版の更新日程が確定したことを意味するものではありません。</p>
+<h3>今後の無料アップデートについて</h3>
+<p class="archive-label">2026年9月29日追記</p>
+<p><strong>Aurora Studioは『Project Numazu』の開発を放棄したわけではありません。</strong><a href="https://www.aurora-studio.org/news/official-statement-aurora-studio-announcement-of-project-numazu-engzhjp">8月10日の公式声明</a>にて、N24、長11、沼71、沼72、沼74などの長期更新方針をお知らせしています。</p>
+<p>当スタジオは改善作業を続け、販売・配信上の調整を前提に、<strong>既存のDLC購入者に追加料金なしで今後のアップデートを提供したい</strong>と考えています。新しいビルドはQAおよびプレイヤーのフィードバックを経て、ドイツのパブリッシャーAerosoftとSteam配信を調整する予定です。現時点で配信時期や特定ビルドの承認は確定していません。</p>
+<p>不具合報告や改善提案は <a href="mailto:support@aurora-studio.org">support@aurora-studio.org</a> までお寄せください。</p>
+</section>
+<p style="margin-top:3rem"><a href="https://store.steampowered.com/app/3880120/">Project Numazu on Steam ↗</a><a href="/news/">← All news</a></p>
+</article>'''
+tga_description = "Aurora Studio's TGA 2026 Project Numazu FYC announcement, plus a dated clarification on continued development and intended free DLC updates subject to publisher coordination."
 for slug,title,date,category,summary,link in news_items:
+ if slug == 'project-numazu-tga-2026-fyc':
+  tga_news_schema = news_schema(title, 'https://www.aurora-studio.org/news/project-numazu-tga-2026-fyc/', tga_description, date, '/assets/numazu-buses.jpg')
+  tga_news_schema['dateModified'] = '2026-09-29'
+  page(title, tga_description, tga_content, f'news/{slug}/index.html', tga_news_schema)
+  continue
  content=f'''<section class="page-heading"><p class="eyebrow dark">{category.upper()} · <time datetime="{date}">{date}</time></p><h1 class="article-title">{title}</h1></section><article class="section article"><p class="archive-label">Migration summary · Aurora Studio</p><p>{summary}</p><p>This concise summary preserves the earlier article address while the full archive is being restored.</p><a href="{link}">Explore the project ↗</a><a href="/news/">← All news</a></article>'''
  page(title,summary,content,f'news/{slug}/index.html')
 page('News','Updates from Aurora Studio and its game projects.','''<section class="page-heading"><p class="eyebrow dark">FROM THE STUDIO</p><h1>News<span class="dot">.</span></h1><p>Studio announcements and project milestones. Selected older articles currently show concise migration summaries.</p></section><section class="section news-list"><article><time datetime="2026-09-17">17 SEP 2026</time><div><span>PROJECT UPDATE</span><h2>A Day in the Depot: Railway Depot: Operations &amp; Empire</h2><p>An operations game about the people and decisions behind the railway.</p><a href="/news/a-day-in-the-depot/">Read update ↗</a></div></article><article><time datetime="2026-09-04">04 SEP 2026</time><div><span>STUDIO UPDATE</span><h2>Project Numazu TGA 2026 For Your Consideration campaign</h2><p>The studio announced its consideration campaign; this is not a nomination.</p><a href="/news/project-numazu-tga-2026-fyc/">Read update ↗</a></div></article><article><time datetime="2026-03-30">30 MAR 2026</time><div><span>RELEASE</span><h2>Project Numazu is available on Steam</h2><a href="/news/project-numazu-is-officially-available-on-steam/">Read update ↗</a></div></article><article><time datetime="2025-12-01">01 DEC 2025</time><div><span>PROJECT UPDATE</span><h2>Project Numazu Steam page goes live</h2><a href="/news/omsi-2-add-on-project-numazu-steam-page-now-live/">Read update ↗</a></div></article></section>''','news/index.html')
