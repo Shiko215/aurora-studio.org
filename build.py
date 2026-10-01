@@ -31,6 +31,8 @@ def page(title,description,content,filename, schema=None, lang='en'):
  canonical = f'https://www.aurora-studio.org/{path}'
  acg_routes = {'en':'/acg-partnerships/','zh-Hant':'/zh-hant/acg-partnerships/','zh-Hans':'/zh-hans/acg-partnerships/','ja':'/ja/acg-partnerships/'}
  is_acg = path.endswith('acg-partnerships/')
+ if filename == 'media/index.html':
+  alternates = '<link rel="alternate" hreflang="en" href="https://www.aurora-studio.org/media/"><link rel="alternate" hreflang="zh-Hant" href="https://www.aurora-studio.org/zh-hant/media/"><link rel="alternate" hreflang="x-default" href="https://www.aurora-studio.org/media/">'
  if is_acg:
   alternates = ''.join(f'<link rel="alternate" hreflang="{code}" href="https://www.aurora-studio.org{route}">' for code,route in acg_routes.items()) + '<link rel="alternate" hreflang="x-default" href="https://www.aurora-studio.org/acg-partnerships/">'
  base_schema = {
