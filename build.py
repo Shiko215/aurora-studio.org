@@ -318,7 +318,48 @@ page(acg_news_title, acg_news_summary,
      'news/acg-partnerships-launch/index.html',
      news_schema(acg_news_title, acg_news_url, acg_news_summary, '2026-09-28', '/assets/numazu-route.jpg'))
 
+
+openomsi_news_title = 'Aurora Studio expands upstream technical contributions to openOMSI'
+openomsi_news_summary = 'Project Numazu is being used as a production-scale compatibility testbed as Aurora Studio contributes fixes and Asian localisation to the open-source simulator.'
+openomsi_news_url = 'https://www.aurora-studio.org/news/aurora-openomsi-technical-contributions/'
+page(openomsi_news_title, openomsi_news_summary,
+     '''<section class="page-heading news-heading"><p class="eyebrow dark">TECHNICAL CONTRIBUTION · <time datetime="2026-10-01">1 OCTOBER 2026</time></p>
+     <h1 class="article-title">Aurora Studio expands upstream technical contributions to openOMSI.</h1>
+     <p>Commercial OMSI experience meets open-source compatibility work.</p></section>
+     <article class="section article">
+     <figure style="margin:0 0 2rem"><img class="article-visual" src="/assets/numazu-gallery/numazu-08.webp" alt="Project Numazu bus route scene used to illustrate Aurora Studio's commercial OMSI work" loading="lazy"><figcaption><small>Project Numazu is being used by Aurora Studio as a production-scale compatibility testbed. Image: Project Numazu.</small></figcaption></figure>
+     <p><strong>HONG KONG, 1 October 2026</strong> — Aurora Studio has expanded its technical involvement in <a href="https://github.com/turbo-devv/openOMSI" target="_blank" rel="noopener noreferrer">openOMSI</a>, contributing upstream compatibility fixes and Asian interface localisation while testing existing OMSI content, including <a href="/project/project-numazu/">OMSI 2 Add-on: Project Numazu</a>, against the emerging open-source simulator.</p>
+     <p>Project Numazu combines a large map, scenery objects, passenger assets, AI traffic, scripts and legacy OMSI behaviours. Aurora Studio is using that production-scale content as a practical compatibility testbed: when a problem appears, the studio investigates whether it is specific to the add-on or reflects a wider OMSI behaviour that may affect other maps and vehicles.</p>
+     <h2>Upstream work already merged</h2>
+     <p>Since 29 September 2026, Aurora Studio founder Shiko Leung, contributing on GitHub as <strong>Shiko215</strong>, has submitted six substantive pull requests to the upstream <strong>turbo-devv/openOMSI</strong> repository. Five had been merged by 1 October, with one further compatibility change under review.</p>
+     <ul>
+       <li><a href="https://github.com/turbo-devv/openOMSI/pull/88" target="_blank" rel="noopener noreferrer">PR #88</a> — Asian interface localisation contributed by Aurora Studio.</li>
+       <li><a href="https://github.com/turbo-devv/openOMSI/pull/103" target="_blank" rel="noopener noreferrer">PR #103</a> — indexed parking lists, scenery free textures and decorative splines.</li>
+       <li><a href="https://github.com/turbo-devv/openOMSI/pull/198" target="_blank" rel="noopener noreferrer">PR #198</a> — scenery free-texture filenames produced in frame scripts.</li>
+       <li><a href="https://github.com/turbo-devv/openOMSI/pull/199" target="_blank" rel="noopener noreferrer">PR #199</a> — low-density random traffic compatibility.</li>
+       <li><a href="https://github.com/turbo-devv/openOMSI/pull/201" target="_blank" rel="noopener noreferrer">PR #201</a> — preserving AI pool rules through random traffic routing.</li>
+       <li><a href="https://github.com/turbo-devv/openOMSI/pull/455" target="_blank" rel="noopener noreferrer">PR #455</a> — map-specific nested passenger-pack compatibility, under review at the time of publication.</li>
+     </ul>
+     <h2>From commercial add-on development to ecosystem compatibility</h2>
+     <p>The purpose of this work is broader than making one add-on run. Commercial OMSI content exposes combinations of assets and legacy behaviours that can be difficult to reproduce in a small test scene. By tracing those cases and contributing suitable fixes upstream, Aurora Studio aims to help openOMSI interpret more of the existing OMSI ecosystem faithfully.</p>
+     <p>The studio is also contributing from an Asian development perspective. Interface localisation and compatibility testing with Japanese transport content can help reduce barriers for users and creators whose OMSI libraries extend beyond the simulator's original European focus.</p>
+     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin:2rem 0">
+       <figure style="margin:0"><img src="/assets/numazu-gallery/numazu-00.webp" alt="Project Numazu city street screenshot" loading="lazy" style="width:100%;height:auto;display:block"><figcaption><small>Project Numazu city environment.</small></figcaption></figure>
+       <figure style="margin:0"><img src="/assets/numazu-gallery/numazu-10b.webp" alt="Project Numazu Japanese streetscape screenshot" loading="lazy" style="width:100%;height:auto;display:block"><figcaption><small>Japanese scenery and legacy OMSI content provide real-world compatibility cases.</small></figcaption></figure>
+       <figure style="margin:0"><img src="/assets/numazu-buses.jpg" alt="Project Numazu bus simulation screenshot" loading="lazy" style="width:100%;height:auto;display:block"><figcaption><small>Project Numazu remains a commercial OMSI 2 add-on while also serving as a practical test case.</small></figcaption></figure>
+     </div>
+     <h2>An independent open-source project</h2>
+     <p><strong>openOMSI is an independent open-source project.</strong> Aurora Studio's current involvement is as an upstream contributor through compatibility testing, localisation and code contributions. This announcement does not describe Aurora Studio as the owner, operator or official technology partner of openOMSI.</p>
+     <p>Project Numazu remains a commercial OMSI 2 add-on distributed through its existing publishing channels. Aurora Studio intends to continue testing relevant OMSI content and contributing suitable fixes where they can benefit the wider community.</p>
+     <p><strong>Press and technical enquiries:</strong> <a href="mailto:press@aurora-studio.org">press@aurora-studio.org</a></p>
+     <div class="article-links"><a href="https://github.com/turbo-devv/openOMSI" target="_blank" rel="noopener noreferrer">Explore openOMSI on GitHub ↗</a><a href="/project/project-numazu/">Explore Project Numazu ↗</a><a href="/news/">← All news</a></div>
+     </article>''',
+     'news/aurora-openomsi-technical-contributions/index.html',
+     news_schema(openomsi_news_title, openomsi_news_url, openomsi_news_summary, '2026-10-01', '/assets/numazu-gallery/numazu-08.webp'))
+
 archive = [
+    ('2026-10-01', 'Technical contribution', openomsi_news_title,
+     openomsi_news_summary, '/news/aurora-openomsi-technical-contributions/'),
     ('2026-09-28', 'Studio announcement', acg_news_title,
      acg_news_summary, '/news/acg-partnerships-launch/'),
     ('2026-09-17', 'Project update', 'A Day in the Depot: Railway Depot: Operations & Empire',
@@ -339,11 +380,11 @@ news_rows = ''.join(
 page('News', 'News, development logs and project milestones from Aurora Studio.',
      '<section class="page-heading news-heading"><p class="eyebrow dark">FROM THE STUDIO</p>'
      '<h1>Studio news<span class="dot">.</span></h1><p>Releases, exhibitions, selections and notes from the worlds we are building.</p></section>'
-      '<section class="section news-feature"><div><p class="eyebrow dark">NEW STUDIO SERVICE</p>'
-      '<h2>ACG partnerships across borders.</h2>'
-      '<p>We help brands and venues develop proposals connecting Hong Kong and the Greater Bay Area with Japan and international creative markets.</p>'
-      '<a href="/news/acg-partnerships-launch/">Read the announcement ↗</a></div>'
-      '<img src="/assets/numazu-route.jpg" alt="A Project Numazu streetscape" loading="lazy"></section>'
+      '<section class="section news-feature"><div><p class="eyebrow dark">OPEN-SOURCE TECHNOLOGY</p>'
+      '<h2>Aurora Studio contributes upstream to openOMSI.</h2>'
+      '<p>Project Numazu is being used as a production-scale compatibility testbed as the studio contributes fixes and Asian localisation upstream.</p>'
+      '<a href="/news/aurora-openomsi-technical-contributions/">Read the technical update ↗</a></div>'
+      '<img src="/assets/numazu-gallery/numazu-08.webp" alt="Project Numazu bus route scene" loading="lazy"></section>'
      '<section class="section event-news"><div class="section-head"><p class="eyebrow dark">ON THE WORLD STAGE</p><span>2025 / PROJECT NUMAZU</span></div>'
      '<div class="event-grid"><a href="/news/aurora-studio-in-tgs-2025/"><span>EXHIBITION · TOKYO</span><h2>Tokyo Game Show 2025</h2><p>Project Numazu was featured with Aerosoft in the German Pavilion.</p><b>Read the story ↗</b></a>'
      '<a href="/news/aurora-studio-selected-for-siggraph-asia-2025/"><span>SELECTION · HONG KONG</span><h2>SIGGRAPH Asia 2025</h2><p>Selected for the Games Start-Ups Gallery.</p><b>Read the story ↗</b></a></div></section>'
