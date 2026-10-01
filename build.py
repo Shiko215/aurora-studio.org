@@ -64,10 +64,13 @@ def page(title,description,content,filename, schema=None, lang='en'):
   base_schema['@graph'][2]['inLanguage']=lang
  schema_json = json.dumps(base_schema, ensure_ascii=False, separators=(',',':')).replace('</','<\\/')
  is_acg_news = filename == 'news/acg-partnerships-launch/index.html'
+ is_openomsi_news = filename == 'news/aurora-openomsi-technical-contributions/index.html'
  social = ''
- if is_acg or is_acg_news:
+ if is_acg or is_acg_news or is_openomsi_news:
   social_image = 'https://www.aurora-studio.org/assets/numazu-route.jpg'
-  social_type = 'article' if is_acg_news else 'website'
+  if is_openomsi_news:
+   social_image = 'https://www.aurora-studio.org/assets/openomsi/openomsi-numazu-fish-market.webp'
+  social_type = 'article' if is_acg_news or is_openomsi_news else 'website'
   social = (f'<meta property="og:type" content="{social_type}"><meta property="og:site_name" content="Aurora Studio">'
             f'<meta property="og:title" content="{escape(title, quote=True)}">'
             f'<meta property="og:description" content="{escape(description, quote=True)}">'
@@ -77,7 +80,7 @@ def page(title,description,content,filename, schema=None, lang='en'):
   if is_acg:
    social += f'<meta property="og:locale" content="{ {"en":"en_US","zh-Hant":"zh_HK","zh-Hans":"zh_CN","ja":"ja_JP"}[lang] }">'
   else:
-   social += '<meta property="article:published_time" content="2026-09-28">'
+   social += f'<meta property="article:published_time" content="{schema["datePublished"]}">'
  html=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{escape(title)} | Aurora Studio</title><meta name="description" content="{escape(description)}"><link rel="canonical" href="{canonical}">{alternates}<link rel="icon" href="/assets/aurora-studio-icon.png?v=20260925" type="image/png"><link rel="apple-touch-icon" href="/assets/aurora-studio-icon.png"><link rel="stylesheet" href="/style.css?v=20261001a"><script type="application/ld+json">{schema_json}</script></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><a href="/" class="brand" aria-label="Aurora Studio home"><span class="brand-mark" aria-hidden="true"><img src="/assets/aurora-studio-logo.jpeg" alt="" width="1500" height="1000"></span><span class="brand-name">Aurora Studio</span></a><nav aria-label="Main navigation">{nav}</nav>{languages}<a class="header-contact" href="mailto:press@aurora-studio.org">Get in touch <span aria-hidden="true">↗</span></a></header><main id="main">{content}</main><footer><div><strong>AURORA STUDIO</strong><p>Independent game development · Hong Kong</p></div><div><a href="/project/">Projects</a><a href="/services/">Services</a><a href="/acg-partnerships/">ACG Partnerships</a><a href="/talents/">Talents</a><a href="/news/">News</a><a href="/media/">Media</a><a href="/support/">Support</a><a href="/governance/">Governance</a><a href="/contact/">Contact</a></div><small>© 2026 Aurora Studio</small></footer></body></html>'''
  if is_acg:
   language_menu = '<div class="lang" aria-label="Page language">' + ''.join(f'<a href="{acg_routes[code]}" lang="{code}"' + (' aria-current="page"' if code == lang else '') + f'>{label}</a>' for code,label in [('en','EN'),('zh-Hant','繁'),('zh-Hans','简'),('ja','日')]) + '</div>'
@@ -327,7 +330,7 @@ page(openomsi_news_title, openomsi_news_summary,
      <h1 class="article-title">Aurora Studio expands upstream technical contributions to openOMSI.</h1>
      <p>Commercial OMSI experience meets open-source compatibility work.</p></section>
      <article class="section article">
-     <figure style="margin:0 0 2rem"><img class="article-visual" src="/assets/openomsi/openomsi-numazu-fish-market.webp" alt="Project Numazu running in Aurora Studio’s recent openOMSI compatibility workflow at Numazu Fish Market" loading="lazy"><figcaption><small>Recent Project Numazu runtime screenshot used in Aurora Studio’s openOMSI compatibility workflow. Numazu Fish Market, September 2026.</small></figcaption></figure>
+     <figure style="margin:0 0 2rem"><img width="1920" height="1080" class="article-visual" src="/assets/openomsi/openomsi-numazu-fish-market.webp" alt="Project Numazu running in Aurora Studio’s recent openOMSI compatibility workflow at Numazu Fish Market" loading="lazy"><figcaption><small>Recent Project Numazu runtime screenshot used in Aurora Studio’s openOMSI compatibility workflow. Numazu Fish Market, September 2026.</small></figcaption></figure>
      <p><strong>HONG KONG, 1 October 2026</strong> — Aurora Studio has expanded its technical involvement in <a href="https://github.com/turbo-devv/openOMSI" target="_blank" rel="noopener noreferrer">openOMSI</a>, contributing upstream compatibility fixes and Asian interface localisation while testing existing OMSI content, including <a href="/project/project-numazu/">OMSI 2 Add-on: Project Numazu</a>, against the emerging open-source simulator.</p>
      <p>Project Numazu combines a large map, scenery objects, passenger assets, AI traffic, scripts and legacy OMSI behaviours. Aurora Studio is using that production-scale content as a practical compatibility testbed: when a problem appears, the studio investigates whether it is specific to the add-on or reflects a wider OMSI behaviour that may affect other maps and vehicles.</p>
      <h2>Upstream work already merged</h2>
@@ -344,8 +347,9 @@ page(openomsi_news_title, openomsi_news_summary,
      <p>The purpose of this work is broader than making one add-on run. Commercial OMSI content exposes combinations of assets and legacy behaviours that can be difficult to reproduce in a small test scene. By tracing those cases and contributing suitable fixes upstream, Aurora Studio aims to help openOMSI interpret more of the existing OMSI ecosystem faithfully.</p>
      <p>The studio is also contributing from an Asian development perspective. Interface localisation and compatibility testing with Japanese transport content can help reduce barriers for users and creators whose OMSI libraries extend beyond the simulator's original European focus.</p>
      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin:2rem 0">
-       <figure style="margin:0"><img src="/assets/openomsi/openomsi-numazu-station-sunset.webp" alt="Project Numazu at Numazu Station during Aurora Studio’s openOMSI compatibility testing" loading="lazy" style="width:100%;height:auto;display:block"><figcaption><small>Project Numazu at Numazu Station during recent openOMSI compatibility testing.</small></figcaption></figure>
-       <figure style="margin:0"><img src="/assets/openomsi/openomsi-numazu-shinkin-bank.webp" alt="Project Numazu Japanese streetscape during Aurora Studio’s openOMSI compatibility testing" loading="lazy" style="width:100%;height:auto;display:block"><figcaption><small>Japanese streetscape content provides real-world cases for openOMSI compatibility and localisation work.</small></figcaption></figure>
+       <figure style="margin:0"><img width="1920" height="1080" src="/assets/openomsi/openomsi-numazu-station-sunset.webp" alt="Project Numazu at Numazu Station during Aurora Studio’s openOMSI compatibility testing" loading="lazy" style="width:100%;height:auto;display:block"><figcaption><small>Project Numazu at Numazu Station during recent openOMSI compatibility testing.</small></figcaption></figure>
+       <figure style="margin:0"><img width="1920" height="1080" src="/assets/openomsi/openomsi-numazu-shinkin-bank.webp" alt="Project Numazu Japanese streetscape during Aurora Studio’s openOMSI compatibility testing" loading="lazy" style="width:100%;height:auto;display:block"><figcaption><small>Japanese streetscape content provides real-world cases for openOMSI compatibility and localisation work.</small></figcaption></figure>
+       <figure style="margin:0"><img width="1920" height="1080" src="/assets/openomsi/openomsi-numazu-harbour-street.webp" alt="A bus beside Japanese harbour-side buildings in Project Numazu during openOMSI compatibility testing" loading="lazy" style="width:100%;height:auto;display:block"><figcaption><small>Harbour-side buildings and traffic provide additional scenery and vehicle compatibility test cases.</small></figcaption></figure>
      </div>
      <h2>An independent open-source project</h2>
      <p><strong>openOMSI is an independent open-source project.</strong> Aurora Studio's current involvement is as an upstream contributor through compatibility testing, localisation and code contributions. This announcement does not describe Aurora Studio as the owner, operator or official technology partner of openOMSI.</p>
@@ -383,7 +387,7 @@ page('News', 'News, development logs and project milestones from Aurora Studio.'
       '<h2>Aurora Studio contributes upstream to openOMSI.</h2>'
       '<p>Project Numazu is being used as a production-scale compatibility testbed as the studio contributes fixes and Asian localisation upstream.</p>'
       '<a href="/news/aurora-openomsi-technical-contributions/">Read the technical update ↗</a></div>'
-      '<img src="/assets/openomsi/openomsi-numazu-fish-market.webp" alt="Project Numazu bus route scene" loading="lazy"></section>'
+      '<img width="1920" height="1080" src="/assets/openomsi/openomsi-numazu-fish-market.webp" alt="Project Numazu bus route scene" loading="lazy"></section>'
      '<section class="section event-news"><div class="section-head"><p class="eyebrow dark">ON THE WORLD STAGE</p><span>2025 / PROJECT NUMAZU</span></div>'
      '<div class="event-grid"><a href="/news/aurora-studio-in-tgs-2025/"><span>EXHIBITION · TOKYO</span><h2>Tokyo Game Show 2025</h2><p>Project Numazu was featured with Aerosoft in the German Pavilion.</p><b>Read the story ↗</b></a>'
      '<a href="/news/aurora-studio-selected-for-siggraph-asia-2025/"><span>SELECTION · HONG KONG</span><h2>SIGGRAPH Asia 2025</h2><p>Selected for the Games Start-Ups Gallery.</p><b>Read the story ↗</b></a></div></section>'
@@ -407,8 +411,8 @@ page('Media room', 'Aurora Studio media showcase: official films, game visuals, 
 <article class="video-card"><div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/QSVKhPHtCjQ" title="OMSI 2 Project Numazu DLC official trailer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div><div><span>OFFICIAL TRAILER · PROJECT NUMAZU</span><h3>Explore the city.</h3><p>Streets, coastal scenery and bus routes recreated for OMSI 2.</p><a href="https://www.youtube.com/watch?v=QSVKhPHtCjQ" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a></div></article>
 <article class="video-card"><div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/dSMEqxv96Ps" title="Project Numazu 2026 For Your Consideration campaign film" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div><div><span>OFFICIAL CAMPAIGN FILM · 2026</span><h3>For Your Consideration.</h3><p>A studio film tracing Project Numazu's journey from Hong Kong to Numazu and international showcases.</p><a href="https://www.youtube.com/watch?v=dSMEqxv96Ps" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a></div></article>
 </div><div class="media-visual-grid" style="margin-top:1rem">
-<a class="visual-card" href="/project/project-numazu/"><img src="/assets/openomsi/openomsi-numazu-station-sunset.webp" alt="Project Numazu city streets" loading="lazy"><div><span>GAME WORLD</span><h3>The streets are part of the simulation.</h3><p>City scale, streetscape detail and road rhythm build a drivable version of Numazu.</p></div></a>
-<a class="visual-card" href="/project/project-numazu/"><img src="/assets/openomsi/openomsi-numazu-fish-market.webp" alt="Project Numazu bus route scene" loading="lazy"><div><span>BUS OPERATIONS</span><h3>Work inside the city.</h3><p>Bus operations, stops and traffic form the core of the simulation experience.</p></div></a>
+<a class="visual-card" href="/project/project-numazu/"><img width="1920" height="1080" src="/assets/openomsi/openomsi-numazu-station-sunset.webp" alt="Project Numazu city streets" loading="lazy"><div><span>GAME WORLD</span><h3>The streets are part of the simulation.</h3><p>City scale, streetscape detail and road rhythm build a drivable version of Numazu.</p></div></a>
+<a class="visual-card" href="/project/project-numazu/"><img width="1920" height="1080" src="/assets/openomsi/openomsi-numazu-fish-market.webp" alt="Project Numazu bus route scene" loading="lazy"><div><span>BUS OPERATIONS</span><h3>Work inside the city.</h3><p>Bus operations, stops and traffic form the core of the simulation experience.</p></div></a>
 <a class="visual-card" href="/project/project-numazu/"><img src="/assets/numazu-station.jpg" alt="Numazu Station in Project Numazu" loading="lazy"><div><span>NUMAZU</span><h3>A real city, rebuilt digitally.</h3><p>From the station to the port, place is at the centre of the experience.</p></div></a>
 </div></section>
 
@@ -427,7 +431,7 @@ page('Media room', 'Aurora Studio media showcase: official films, game visuals, 
 
 <section class="section media-section" id="events"><div class="media-section-head"><div><p class="eyebrow dark">04 / EXHIBITIONS & RECOGNITION</p><h2>From screens<br>to public showcases.</h2></div><div><p>Aurora Studio's work has appeared through international games and computer graphics events, while the studio founder received an Excellence Award at a Hong Kong game competition.</p></div></div><div class="event-grid">
 <a class="event-card" href="/news/aurora-studio-in-tgs-2025/"><img src="/assets/numazu-gallery/numazu-04.webp" alt="Project Numazu game scene representing the work shown at Tokyo Game Show 2025" loading="lazy"><div><span>TOKYO · SEP 2025</span><h3>Tokyo Game Show</h3><p>Project Numazu was presented with publisher Aerosoft at the German Pavilion.</p><b>Read the exhibition recap ↗</b></div></a>
-<a class="event-card" href="https://asia.siggraph.org/2025/program/games/" target="_blank" rel="noopener noreferrer"><img src="/assets/openomsi/openomsi-numazu-shinkin-bank.webp" alt="Project Numazu game scene representing the work listed at SIGGRAPH Asia 2025" loading="lazy"><div><span>HONG KONG · DEC 2025</span><h3>SIGGRAPH Asia</h3><p>Project Numazu and Aurora Studio were listed in the official Games Start-Ups Gallery.</p><b>View the official Games Program ↗</b></div></a>
+<a class="event-card" href="https://asia.siggraph.org/2025/program/games/" target="_blank" rel="noopener noreferrer"><img width="1920" height="1080" src="/assets/openomsi/openomsi-numazu-shinkin-bank.webp" alt="Project Numazu game scene representing the work listed at SIGGRAPH Asia 2025" loading="lazy"><div><span>HONG KONG · DEC 2025</span><h3>SIGGRAPH Asia</h3><p>Project Numazu and Aurora Studio were listed in the official Games Start-Ups Gallery.</p><b>View the official Games Program ↗</b></div></a>
 <a class="event-card" href="https://delf.cyberport.hk/2024/en/delf-plus" target="_blank" rel="noopener noreferrer"><img src="/assets/numazu-route.jpg" alt="Aurora Studio game work" loading="lazy"><div><span>HONG KONG · 2024</span><h3>HKGD GCE Excellence Award</h3><p>Aurora Studio founder Shiko Leung received an Excellence Award.</p><b>View event details ↗</b></div></a>
 </div></section>
 
@@ -445,3 +449,4 @@ page('Media room', 'Aurora Studio media showcase: official films, game visuals, 
 
 from acg_partnerships_i18n import generate as generate_acg_partnerships
 generate_acg_partnerships(page)
+
