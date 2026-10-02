@@ -194,7 +194,7 @@ tga_content = '''
 tga_description = "Aurora Studio's TGA 2026 Project Numazu FYC announcement, plus a dated clarification on continued development and intended free DLC updates subject to publisher coordination."
 for slug,title,date,category,summary,link in news_items:
  if slug == 'project-numazu-steam-sale-oct-2026':
-  sale_asset = '/assets/project-numazu-steam-sale-oct-2026.jpg'
+  sale_asset = '/assets/numazu-gallery/project-numazu-steam-sale-poster.png'
   sale_content = f'''<section class="page-heading"><p class="eyebrow dark">SALE · <time datetime="{date}">2 OCTOBER 2026</time></p><h1 class="article-title">{title}</h1></section><article class="section article"><figure style="margin:0 0 2rem"><img src="{sale_asset}" alt="Project Numazu Steam Sale poster announcing 25% off until October 9, 2026" width="240" height="135" style="display:block;width:100%;height:auto"></figure><p class="archive-label">Aurora Studio · Steam Sale</p><p><strong>Project Numazu is 25% off on Steam until October 9, 2026.</strong></p><p>Take the wheel and explore the streets of Numazu, Shizuoka in OMSI 2 during this limited-time promotion.</p><a href="{link}">Get Project Numazu on Steam ↗</a><a href="/news/">← All news</a></article>'''
   page(title, summary, sale_content, f'news/{slug}/index.html', news_schema(title, f'https://www.aurora-studio.org/news/{slug}/', summary, date, sale_asset))
   continue
