@@ -6,6 +6,12 @@
 <title>Submit Your Game | Aurora Publishing | Aurora Studio</title>
 <meta name="description" content="Aurora Publishing is exploring indie game partnerships, localization, launch planning and Asia-facing promotion. Tell us about your game.">
 <link rel="canonical" href="https://www.aurora-studio.org/publishing/">
+<link rel="alternate" hreflang="en" href="https://www.aurora-studio.org/publishing/">
+<link rel="alternate" hreflang="zh-Hant" href="https://www.aurora-studio.org/zh-hant/publishing/">
+<link rel="alternate" hreflang="zh-Hans" href="https://www.aurora-studio.org/zh-hans/publishing/">
+<link rel="alternate" hreflang="ja" href="https://www.aurora-studio.org/ja/publishing/">
+<link rel="alternate" hreflang="ko" href="https://www.aurora-studio.org/ko/publishing/">
+<link rel="alternate" hreflang="x-default" href="https://www.aurora-studio.org/publishing/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Submit Your Game | Aurora Publishing">
 <meta property="og:description" content="Independent creators: share your playable game or prototype with Aurora Studio for potential publishing partnerships.">
@@ -49,14 +55,14 @@
 <header class="site-header">
 <a href="/" class="brand" aria-label="Aurora Studio home"><span class="brand-mark" aria-hidden="true"><img src="/assets/aurora-studio-logo.jpeg" alt="" width="1500" height="1000"></span><span class="brand-name">Aurora Studio</span></a>
 <nav aria-label="Main navigation"><a href="/">Home</a><a href="/project/">Projects</a><a href="/services/">Services</a><a href="/acg-partnerships/">ACG Partnerships</a><a href="/publishing/" aria-current="page">Publishing</a><a href="/media/">Media</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav>
-<div class="lang"><a href="/" lang="en">EN</a><a href="/zh-hant/" lang="zh-Hant">繁</a><a href="/zh-hans/" lang="zh-Hans">简</a><a href="/ja/" lang="ja">日</a><a href="/ko/" lang="ko">한</a></div>
+<div class="lang" aria-label="Page language"><a href="/publishing/" lang="en" aria-current="page">EN</a><a href="/zh-hant/publishing/" lang="zh-Hant">繁</a><a href="/zh-hans/publishing/" lang="zh-Hans">简</a><a href="/ja/publishing/" lang="ja">日</a><a href="/ko/publishing/" lang="ko">한</a></div>
 <a class="header-contact" href="mailto:shikosama215@gmail.com?subject=Aurora%20Publishing%20Enquiry">Pitch your game <span aria-hidden="true">↗</span></a>
 </header>
 <main id="main">
 <section class="page-heading pub-hero">
 <p class="eyebrow">AURORA STUDIO / INDIE PUBLISHING PARTNERSHIPS</p>
 <h1>Built something worth playing?<br><em>Let's help it travel.</em></h1>
-<p>We're exploring partnerships with independent game creators looking toward Steam, international audiences and Asia-facing promotion. Send us a playable project or a focused pitch. Submissions in English, 中文 or 日本語 are welcome.</p>
+<p>We're exploring partnerships with independent game creators looking toward Steam, international audiences and Asia-facing promotion. Send us a playable project or a focused pitch. Submissions in English, 繁體中文, 简体中文, 日本語 or 한국어 are welcome.</p>
 <div class="actions"><a class="button light" href="#submit">Submit your game ↗</a><a class="text-link" href="#what-we-do">What we can discuss ↓</a></div>
 </section>
 <div class="pub-wrap">
@@ -81,10 +87,10 @@
 <p class="eyebrow dark">OPEN FOR INITIAL ENQUIRIES</p><h2>Submit Your Game</h2>
 <p>We welcome playable prototypes, itch.io projects, Steam pages and short pitch decks. Please include:</p>
 <ul><li>Game title, genre and brief hook</li><li>Developer or studio name</li><li>Contact email and region</li><li>Demo, gameplay or trailer URL</li><li>Development stage &amp; target launch window</li><li>Help requested (publishing, PR, localization, etc.)</li></ul>
-<div id="form-status" class="pub-state" role="status">The Google Form requires JavaScript to display. If it does not load, please use email.</div>
+<div id="form-status" class="pub-state" role="status" data-ready="Online submission is available via Google Forms. You can also email us a pitch.">The Google Form requires JavaScript to display. If it does not load, please use email.</div>
 <div class="actions"><a class="button dark" id="form-link" href="#" rel="noopener noreferrer" target="_blank" hidden>Open Google submission form ↗</a><a class="button dark" id="email-link" href="mailto:shikosama215@gmail.com?subject=Aurora%20Publishing%20-%20Game%20Submission">Send pitch by email ↗</a></div>
 <div id="form-embed" hidden><iframe class="pub-frame" title="Aurora Publishing game submission form" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-<p class="pub-note">Submissions are for preliminary partnership review and possible follow-up only. Do not provide confidential source code, financial statements, passwords or sensitive personal information. Submission does not establish an NDA, transfer IP rights or promise a deal. Only send materials that you have permission to share. For removal requests, contact <a href="mailto:shikosama215@gmail.com">shikosama215@gmail.com</a>.</p>
+<p class="pub-note">Submissions are for preliminary partnership review and possible follow-up only. Do not provide confidential source code, financial statements, passwords or sensitive personal information. Submission does not establish an NDA, transfer IP rights or promise a deal. Only send materials that you have permission to share. For removal requests, contact <a href="mailto:shikosama215@gmail.com">shikosama215@gmail.com</a>.</p><p class="pub-note">The questions in Google Forms are controlled by the form owner and may remain in their original language.</p>
 </section>
 </div>
 </main>
@@ -96,7 +102,7 @@
  if(!/^https:\/\/(docs\.google\.com\/forms\/d\/(?:e\/)?[a-zA-Z0-9_-]+\/viewform|forms\.gle\/[a-zA-Z0-9_-]+)/.test(url))return;
  const link=document.getElementById("form-link");
  link.href=url;link.hidden=false;
- document.getElementById("form-status").textContent="Online submission is available via Google Forms. You can also email us a pitch.";
+ document.getElementById("form-status").textContent=document.getElementById("form-status").dataset.ready;
  if(url.startsWith("https://docs.google.com/forms/")){
   const embed=document.getElementById("form-embed");
   embed.querySelector("iframe").src=url.replace(/\/viewform(?:\?.*)?$/, "/viewform?embedded=true");
