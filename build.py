@@ -92,8 +92,8 @@ def page(title,description,content,filename, schema=None, lang='en'):
   }
   if lang in ui:
    home,projects,services,acg,talents,news,media,about,contact,cta,skip,footnote=ui[lang]
-   nav_local=''.join(f'<a href="{href}">{label}</a>' for href,label in [('/',home),('/project/',projects),('/services/',services),('/'+path,acg),('/publishing/','Submit Your Game (EN)'),('/talents/',talents),('/news/',news),('/media/',media),('/about/',about),('/contact/',contact)])
-   footer_local=''.join(f'<a href="{href}">{label}</a>' for href,label in [('/project/',projects),('/services/',services),('/'+path,acg),('/publishing/','Submit Your Game (EN)'),('/talents/',talents),('/news/',news),('/media/',media),('/support/','Support (EN)'),('/governance/','Governance (EN)'),('/contact/',contact)])
+   nav_local=''.join(f'<a href="{href}">{label}</a>' for href,label in [('/',home),('/project/',projects),('/services/',services),('/'+path,acg),('/'+{'zh-Hant':'zh-hant','zh-Hans':'zh-hans','ja':'ja'}[lang]+'/publishing/',{'zh-Hant':'投稿遊戲','zh-Hans':'提交游戏','ja':'ゲームのご提案'}[lang]),('/talents/',talents),('/news/',news),('/media/',media),('/about/',about),('/contact/',contact)])
+   footer_local=''.join(f'<a href="{href}">{label}</a>' for href,label in [('/project/',projects),('/services/',services),('/'+path,acg),('/'+{'zh-Hant':'zh-hant','zh-Hans':'zh-hans','ja':'ja'}[lang]+'/publishing/',{'zh-Hant':'投稿遊戲','zh-Hans':'提交游戏','ja':'ゲームのご提案'}[lang]),('/talents/',talents),('/news/',news),('/media/',media),('/support/','Support (EN)'),('/governance/','Governance (EN)'),('/contact/',contact)])
    html=html.replace(f'<nav aria-label="Main navigation">{nav}</nav>',f'<nav aria-label="Main navigation">{nav_local}</nav>')
    html=html.replace('<a class="header-contact" href="mailto:press@aurora-studio.org">Get in touch',f'<a class="header-contact" href="mailto:press@aurora-studio.org">{cta}')
    html=html.replace('<a class="skip" href="#main">Skip to content',f'<a class="skip" href="#main">{skip}')
@@ -464,4 +464,7 @@ page('Media room', 'Aurora Studio media showcase: official films, game visuals, 
 
 from acg_partnerships_i18n import generate as generate_acg_partnerships
 generate_acg_partnerships(page)
+
+from publishing_i18n import generate as generate_publishing_pages
+generate_publishing_pages()
 
