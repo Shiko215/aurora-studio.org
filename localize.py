@@ -20,7 +20,7 @@ for code,(lang,title,lead,work,numazu,rot,about,abouttext,news,newstext,contact,
  media_href={'zh-hant':'/zh-hant/media/','ja':'/ja/media/'}.get(code,'/media/')
  media_label=e(media_titles[code]) if code in ('zh-hant','ja') else 'Media'
  media_suffix='' if code in ('zh-hant','ja') else ' (EN)'
- nav=f'<a href="#work">{e(work)}</a><a href="#about">{e(about)}</a><a href="#news">{e(news)}</a><a href="{media_href}">{media_label}</a><a href="/talents/">Talents (EN)</a><a href="#contact">{e(contact)}</a>'
+ nav=f'<a href="#work">{e(work)}</a><a href="/{code}/publishing/">{e({"zh-hant":"遊戲發行","zh-hans":"游戏发行","ja":"パブリッシング","ko":"퍼블리싱"}[code])}</a><a href="#about">{e(about)}</a><a href="#news">{e(news)}</a><a href="{media_href}">{media_label}</a><a href="/talents/">Talents (EN)</a><a href="#contact">{e(contact)}</a>'
  service,servicecopy,back,backcopy,governance=extra[code]
  acg_link=f'<a href="/{code}/acg-partnerships/">{e(acg_links[code])} ↗</a>' if code in acg_links else '<a href="/acg-partnerships/">ACG Partnerships (EN) ↗</a>'
  extra_sections=f'<section class="section home-extras"><div class="info-panel"><h2>{e(service)}</h2><p>{e(servicecopy)}</p><a href="/services/">{e(service)} (EN) ↗</a>{acg_link}<a href="/{code}/publishing/">{e(publishing_links[code])} ↗</a></div><div class="info-panel"><h2>{e(back)}</h2><p>{e(backcopy)}</p><a href="/support/">{e(back)} (EN) ↗</a></div></section>'
