@@ -2,7 +2,7 @@ from pathlib import Path
 from html import escape
 import json
 R=Path(__file__).parent
-nav='<a href="/">Home</a><a href="/project/">Projects</a><a href="/services/">Services</a><a href="/acg-partnerships/">ACG Partnerships</a><a href="/publishing/">Publishing</a><a href="/talents/">Talents</a><a href="/news/">News</a><a href="/media/">Media</a><a href="/about/">About</a><a href="/contact/">Contact</a>'
+nav='<a href="/">Home</a><a href="/publishing/">Publishing</a><a href="/project/">Projects</a><a href="/services/">Services</a><a href="/acg-partnerships/">ACG Partnerships</a><a href="/talents/">Talents</a><a href="/news/">News</a><a href="/media/">Media</a><a href="/about/">About</a><a href="/contact/">Contact</a>'
 languages='<div class="lang"><a href="/" lang="en">EN</a><a href="/zh-hant/" lang="zh-Hant">繁</a><a href="/zh-hans/" lang="zh-Hans">简</a><a href="/ja/" lang="ja">日</a><a href="/ko/" lang="ko">한</a></div>'
 def game_schema(name, url, description, genre, status, image=None, same_as=None):
  data={'@type':'VideoGame','@id':url+'#game','name':name,'url':url,'description':description,'genre':genre,
@@ -92,7 +92,7 @@ def page(title,description,content,filename, schema=None, lang='en'):
   }
   if lang in ui:
    home,projects,services,acg,talents,news,media,about,contact,cta,skip,footnote=ui[lang]
-   nav_local=''.join(f'<a href="{href}">{label}</a>' for href,label in [('/',home),('/project/',projects),('/services/',services),('/'+path,acg),('/'+{'zh-Hant':'zh-hant','zh-Hans':'zh-hans','ja':'ja'}[lang]+'/publishing/',{'zh-Hant':'投稿遊戲','zh-Hans':'提交游戏','ja':'ゲームのご提案'}[lang]),('/talents/',talents),('/news/',news),('/media/',media),('/about/',about),('/contact/',contact)])
+   nav_local=''.join(f'<a href="{href}">{label}</a>' for href,label in [('/',home),('/'+{'zh-Hant':'zh-hant','zh-Hans':'zh-hans','ja':'ja'}[lang]+'/publishing/',{'zh-Hant':'遊戲發行','zh-Hans':'游戏发行','ja':'パブリッシング'}[lang]),('/project/',projects),('/services/',services),('/'+path,acg),('/talents/',talents),('/news/',news),('/media/',media),('/about/',about),('/contact/',contact)])
    footer_local=''.join(f'<a href="{href}">{label}</a>' for href,label in [('/project/',projects),('/services/',services),('/'+path,acg),('/'+{'zh-Hant':'zh-hant','zh-Hans':'zh-hans','ja':'ja'}[lang]+'/publishing/',{'zh-Hant':'投稿遊戲','zh-Hans':'提交游戏','ja':'ゲームのご提案'}[lang]),('/talents/',talents),('/news/',news),('/media/',media),('/support/','Support (EN)'),('/governance/','Governance (EN)'),('/contact/',contact)])
    html=html.replace(f'<nav aria-label="Main navigation">{nav}</nav>',f'<nav aria-label="Main navigation">{nav_local}</nav>')
    html=html.replace('<a class="header-contact" href="mailto:press@aurora-studio.org">Get in touch',f'<a class="header-contact" href="mailto:press@aurora-studio.org">{cta}')

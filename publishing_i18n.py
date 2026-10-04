@@ -33,7 +33,9 @@ def generate():
   html=re.sub(r'<div class="lang" aria-label="Page language">.*?</div>',lambda _:menu,html,count=1,flags=re.S)
   acg=f"/{code}/acg-partnerships/" if code!="ko" else "/acg-partnerships/"
   nav_urls=[f"/{code}/","/project/","/services/",acg,f"/{code}/publishing/","/media/","/about/","/contact/"]
-  nav='<nav aria-label="Main navigation">'+''.join(f'<a href="{href}"'+(' aria-current="page"' if i==4 else '')+f'>{label}</a>' for i,(href,label) in enumerate(zip(nav_urls,locale["nav"])))+'</nav>'
+  nav_items=list(zip(nav_urls,locale["nav"]))
+  nav_items.insert(1,nav_items.pop(4))
+  nav='<nav aria-label="Main navigation">'+''.join(f'<a href="{href}"'+(' aria-current="page"' if i==1 else '')+f'>{label}</a>' for i,(href,label) in enumerate(nav_items))+'</nav>'
   html=re.sub(r'<nav aria-label="Main navigation">.*?</nav>',lambda _:nav,html,count=1,flags=re.S)
   foot_urls=["/project/","/services/",acg,f"/{code}/publishing/","/media/","/governance/","/contact/"]
   foot='<footer><div><strong>AURORA STUDIO</strong><p>'+values[keys.index("Independent game development · Hong Kong")]+ '</p></div><div>'+''.join(f'<a href="{href}">{label}</a>' for href,label in zip(foot_urls,locale["foot"]))+'</div><small>© 2026 Aurora Studio</small></footer>'
