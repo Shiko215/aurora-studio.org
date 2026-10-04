@@ -5,6 +5,7 @@ Static website for Aurora Studio. No package installation or build command is re
 ## Site map
 
 - `/` — English home; `/project/`, `/about/`, `/news/`, `/contact/`, `/services/`, `/support/`, `/governance/`, `/talents/` — main pages.
+- `/publishing/` — Aurora Publishing project submission and partnership landing page. Hand-maintained static HTML; configure the Google Form URL in `publishing/form-config.js`, and see `publishing/README.md` for the one-time Google Forms setup.
 - `/project/project-numazu/`, `/project/revenant-of-tsushima/`, `/project/railway-depot/`, `/project/aurora-engine/` — project pages.
 - `/zh-hant/`, `/zh-hans/`, `/ja/`, `/ko/` — translated core landing pages. The ACG partnerships page also has complete Traditional Chinese, Simplified Chinese and Japanese versions at `/<locale>/acg-partnerships/`. Other deeper pages remain in English and are labeled EN from localized pages.
 - Selected old news slugs have clearly labeled migration summaries; the full archive has not been restored.
