@@ -17,9 +17,9 @@ publishing_links={'zh-hant':'投稿遊戲','zh-hans':'提交游戏','ja':'ゲー
 acg_links={'zh-hant':'ACG 跨境合作','zh-hans':'ACG 跨境合作','ja':'ACG事業提携'}
 
 for code,(lang,title,lead,work,numazu,rot,about,abouttext,news,newstext,contact,press,support) in translations.items():
- media_href={'zh-hant':'/zh-hant/media/','ja':'/ja/media/'}.get(code,'/media/')
- media_label=e(media_titles[code]) if code in ('zh-hant','ja') else 'Media'
- media_suffix='' if code in ('zh-hant','ja') else ' (EN)'
+ media_href={'zh-hant':'/zh-hant/media/','zh-hans':'/zh-hans/media/','ja':'/ja/media/'}.get(code,'/media/')
+ media_label=e(media_titles[code]) if code in ('zh-hant','zh-hans','ja') else 'Media'
+ media_suffix='' if code in ('zh-hant','zh-hans','ja') else ' (EN)'
  nav=f'<a href="#work">{e(work)}</a><a href="/{code}/publishing/">{e({"zh-hant":"遊戲發行","zh-hans":"游戏发行","ja":"パブリッシング","ko":"퍼블리싱"}[code])}</a><a href="#about">{e(about)}</a><a href="#news">{e(news)}</a><a href="{media_href}">{media_label}</a><a href="/talents/">Talents (EN)</a><a href="#contact">{e(contact)}</a>'
  service,servicecopy,back,backcopy,governance=extra[code]
  acg_link=f'<a href="/{code}/acg-partnerships/">{e(acg_links[code])} ↗</a>' if code in acg_links else '<a href="/acg-partnerships/">ACG Partnerships (EN) ↗</a>'
