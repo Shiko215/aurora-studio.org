@@ -2,9 +2,12 @@
 
 The page at https://www.aurora-studio.org/publishing/ has a working email fallback: **shikosama215@gmail.com**.
 
-No published Google Form currently exists in the connected Google Drive, and Google Forms cannot be created through the available Drive connector. Never invent a public form URL.
+Google Form URL supplied by the owner and configured in `form-config.js`:
+https://docs.google.com/forms/d/e/1FAIpQLSeeRgUuz9XtWlPDc0ViIzRcz8jlFzfALXT-tHk9Qb4zQMNjww/viewform
 
-## One-time setup (Google account owner)
+Google Forms itself is managed externally. The form's public access, required questions, response settings, data handling, and receipt of submissions must be verified in the owning Google account before launch.
+
+## Optional: recreate a form (Google account owner; do not run for the existing form)
 
 1. Open https://script.google.com/home/projects/create while signed into the intended Google account.
 2. Paste the code in `create-google-form.gs` and run `createAuroraPublishingForm()` once.
