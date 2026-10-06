@@ -377,7 +377,7 @@ page(openomsi_news_title, openomsi_news_summary,
 
 archive = [
     ('2026-10-06', 'Publishing announcement', 'Aurora Studio expands into indie game publishing: Indie Games, Beyond Borders',
-     'Aurora Publishing is open to indie game pitches for international release planning, localization, QA and creator-led marketing.', '/news/aurora-publishing-indie-games-beyond-borders/'),
+     'Aurora Publishing opens to indie game pitches, while Aurora Studio welcomes investor enquiries about its longer-term studio and publishing plans.', '/news/aurora-publishing-indie-games-beyond-borders/'),
     ('2026-10-01', 'Technical contribution', openomsi_news_title,
      openomsi_news_summary, '/news/aurora-openomsi-technical-contributions/'),
     ('2026-09-28', 'Studio announcement', acg_news_title,
@@ -402,7 +402,7 @@ page('News', 'News, development logs and project milestones from Aurora Studio.'
      '<h1>Studio news<span class="dot">.</span></h1><p>Releases, exhibitions, selections and notes from the worlds we are building.</p></section>'
       '<section class="section news-feature"><div><p class="eyebrow dark">PUBLISHING · OPEN TO PITCHES</p>'
       '<h2>Indie Games, Beyond Borders.</h2>'
-      '<p>Aurora Publishing welcomes indie developer pitches for international release planning, localization, QA and creator-led promotion.</p>'
+      '<p>Aurora Publishing welcomes indie game pitches for global market support. Aurora Studio also welcomes investor and strategic financing enquiries.</p>'
       '<a href="/news/aurora-publishing-indie-games-beyond-borders/">Read the publishing announcement ↗</a></div>'
       '<img src="/assets/aurora-publishing-indie-games-beyond-borders-cover.png" alt="Aurora Publishing: Indie Games, Beyond Borders announcement artwork" loading="lazy"></section>'
      '<section class="section event-news"><div class="section-head"><p class="eyebrow dark">ON THE WORLD STAGE</p><span>2025 / PROJECT NUMAZU</span></div>'
