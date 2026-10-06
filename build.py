@@ -376,6 +376,8 @@ page(openomsi_news_title, openomsi_news_summary,
      news_schema(openomsi_news_title, openomsi_news_url, openomsi_news_summary, '2026-10-01', '/assets/openomsi/openomsi-numazu-fish-market.webp'))
 
 archive = [
+    ('2026-10-06', 'Publishing announcement', 'Aurora Studio expands into indie game publishing: Indie Games, Beyond Borders',
+     'Aurora Publishing is open to indie game pitches for international release planning, localization, QA and creator-led marketing.', '/news/aurora-publishing-indie-games-beyond-borders/'),
     ('2026-10-01', 'Technical contribution', openomsi_news_title,
      openomsi_news_summary, '/news/aurora-openomsi-technical-contributions/'),
     ('2026-09-28', 'Studio announcement', acg_news_title,
@@ -398,11 +400,11 @@ news_rows = ''.join(
 page('News', 'News, development logs and project milestones from Aurora Studio.',
      '<section class="page-heading news-heading"><p class="eyebrow dark">FROM THE STUDIO</p>'
      '<h1>Studio news<span class="dot">.</span></h1><p>Releases, exhibitions, selections and notes from the worlds we are building.</p></section>'
-      '<section class="section news-feature"><div><p class="eyebrow dark">OPEN-SOURCE TECHNOLOGY</p>'
-      '<h2>Aurora Studio contributes upstream to openOMSI.</h2>'
-      '<p>Project Numazu is being used as a production-scale compatibility testbed as the studio contributes fixes and Asian localisation upstream.</p>'
-      '<a href="/news/aurora-openomsi-technical-contributions/">Read the technical update ↗</a></div>'
-      '<img width="1920" height="1080" src="/assets/openomsi/openomsi-numazu-fish-market.webp" alt="Project Numazu bus route scene" loading="lazy"></section>'
+      '<section class="section news-feature"><div><p class="eyebrow dark">PUBLISHING · OPEN TO PITCHES</p>'
+      '<h2>Indie Games, Beyond Borders.</h2>'
+      '<p>Aurora Publishing welcomes indie developer pitches for international release planning, localization, QA and creator-led promotion.</p>'
+      '<a href="/news/aurora-publishing-indie-games-beyond-borders/">Read the publishing announcement ↗</a></div>'
+      '<img src="/assets/numazu-route.jpg" alt="Aurora Studio cross-border game release experience" loading="lazy"></section>'
      '<section class="section event-news"><div class="section-head"><p class="eyebrow dark">ON THE WORLD STAGE</p><span>2025 / PROJECT NUMAZU</span></div>'
      '<div class="event-grid"><a href="/news/aurora-studio-in-tgs-2025/"><span>EXHIBITION · TOKYO</span><h2>Tokyo Game Show 2025</h2><p>Project Numazu was featured with Aerosoft in the German Pavilion.</p><b>Read the story ↗</b></a>'
      '<a href="/news/aurora-studio-selected-for-siggraph-asia-2025/"><span>SELECTION · HONG KONG</span><h2>SIGGRAPH Asia 2025</h2><p>Selected for the Games Start-Ups Gallery.</p><b>Read the story ↗</b></a></div></section>'
