@@ -16,11 +16,13 @@ Contact: https://www.aurora-studio.org/contact/
 - ACG partnerships announcement: https://www.aurora-studio.org/news/acg-partnerships-launch/
 - Governance: https://www.aurora-studio.org/governance/
 - Support: https://www.aurora-studio.org/support/
+- Aurora Publishing: https://www.aurora-studio.org/publishing/
+  Aurora Publishing is the selective indie game publishing and co-marketing initiative of Aurora Studio, based in Hong Kong.
 
 ## Projects
 
 - Project Numazu: https://www.aurora-studio.org/project/project-numazu/
-  OMSI 2 simulation add-on recreating Numazu, Shizuoka. Released in March 2026.
+  OMSI 2 simulation add-on recreating Numazu, Shizuoka. Released in March 2026. Aurora Studio develops the project with collaborators including Negi-Kyu Workshop; the Steam store currently lists Aerosoft GmbH as publisher. Treat the canonical project page and Steam listing as current release references; older news posts are historical snapshots.
 - Revenant of Tsushima: https://www.aurora-studio.org/project/revenant-of-tsushima/
   First-person Japanese folk horror game set around an Edo-period journey. In development.
   Official project site: https://revenant-tsushima.aurora-studio.org/
