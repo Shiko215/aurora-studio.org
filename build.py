@@ -68,7 +68,7 @@ def page(title,description,content,filename, schema=None, lang='en'):
   base_schema['@graph'].append(schema)
  if is_acg:
   base_schema['@graph'].append(acg_service_schema(canonical,title,description))
-  base_schema['@graph'][2]['inLanguage']=lang
+  next(item for item in base_schema['@graph'] if item.get('@type')=='WebPage')['inLanguage']=lang
  schema_json = json.dumps(base_schema, ensure_ascii=False, separators=(',',':')).replace('</','<\\/')
  is_acg_news = filename == 'news/acg-partnerships-launch/index.html'
  is_openomsi_news = filename == 'news/aurora-openomsi-technical-contributions/index.html'
