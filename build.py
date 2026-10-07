@@ -30,7 +30,6 @@ def media_video_schemas():
    'thumbnailUrl':['https://i.ytimg.com/vi/QSVKhPHtCjQ/hqdefault.jpg'],
    'uploadDate':'2025-09-25',
    'embedUrl':'https://www.youtube-nocookie.com/embed/QSVKhPHtCjQ',
-   'contentUrl':'https://www.youtube.com/watch?v=QSVKhPHtCjQ',
    'publisher':{'@id':'https://www.aurora-studio.org/#organization'}
   },
   {
@@ -41,7 +40,6 @@ def media_video_schemas():
    'thumbnailUrl':['https://i.ytimg.com/vi/dSMEqxv96Ps/hqdefault.jpg'],
    'uploadDate':'2026-09-04',
    'embedUrl':'https://www.youtube-nocookie.com/embed/dSMEqxv96Ps',
-   'contentUrl':'https://www.youtube.com/watch?v=dSMEqxv96Ps',
    'publisher':{'@id':'https://www.aurora-studio.org/#organization'}
   },
   {
@@ -52,7 +50,6 @@ def media_video_schemas():
    'thumbnailUrl':['https://i.ytimg.com/vi/MWobQS8yOh8/hqdefault.jpg'],
    'uploadDate':'2026-06-30',
    'embedUrl':'https://www.youtube-nocookie.com/embed/MWobQS8yOh8',
-   'contentUrl':'https://www.youtube.com/watch?v=MWobQS8yOh8',
    'publisher':{'@id':'https://www.aurora-studio.org/#organization'}
   }
  ]
