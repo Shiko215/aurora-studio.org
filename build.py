@@ -20,6 +20,43 @@ def news_schema(title, url, description, date, image=None):
  if image: data['image']='https://www.aurora-studio.org'+image
  return data
 
+def media_video_schemas():
+ return [
+  {
+   '@type':'VideoObject',
+   '@id':'https://www.youtube.com/watch?v=QSVKhPHtCjQ#video',
+   'name':'OMSI 2 Project Numazu DLC official trailer',
+   'description':'Official Project Numazu trailer showing the streets, coastal scenery and bus routes recreated for OMSI 2.',
+   'thumbnailUrl':['https://i.ytimg.com/vi/QSVKhPHtCjQ/hqdefault.jpg'],
+   'uploadDate':'2025-09-25',
+   'embedUrl':'https://www.youtube-nocookie.com/embed/QSVKhPHtCjQ',
+   'contentUrl':'https://www.youtube.com/watch?v=QSVKhPHtCjQ',
+   'publisher':{'@id':'https://www.aurora-studio.org/#organization'}
+  },
+  {
+   '@type':'VideoObject',
+   '@id':'https://www.youtube.com/watch?v=dSMEqxv96Ps#video',
+   'name':'Project Numazu 2026 For Your Consideration campaign film',
+   'description':"Aurora Studio's Project Numazu 2026 For Your Consideration campaign film, tracing the project from Hong Kong to Numazu and international showcases.",
+   'thumbnailUrl':['https://i.ytimg.com/vi/dSMEqxv96Ps/hqdefault.jpg'],
+   'uploadDate':'2026-09-04',
+   'embedUrl':'https://www.youtube-nocookie.com/embed/dSMEqxv96Ps',
+   'contentUrl':'https://www.youtube.com/watch?v=dSMEqxv96Ps',
+   'publisher':{'@id':'https://www.aurora-studio.org/#organization'}
+  },
+  {
+   '@type':'VideoObject',
+   '@id':'https://www.youtube.com/watch?v=MWobQS8yOh8#video',
+   'name':'Revenant of Tsushima official teaser 2026',
+   'description':'Official teaser for Revenant of Tsushima, introducing Tsushima Mewa and the supernatural folk-horror world around her.',
+   'thumbnailUrl':['https://i.ytimg.com/vi/MWobQS8yOh8/hqdefault.jpg'],
+   'uploadDate':'2026-06-30',
+   'embedUrl':'https://www.youtube-nocookie.com/embed/MWobQS8yOh8',
+   'contentUrl':'https://www.youtube.com/watch?v=MWobQS8yOh8',
+   'publisher':{'@id':'https://www.aurora-studio.org/#organization'}
+  }
+ ]
+
 def acg_service_schema(url, title, description):
  return {'@type':'Service','@id':url+'#service','name':title,
          'description':description,'serviceType':'ACG partnership strategy and local activation planning',
@@ -66,6 +103,8 @@ def page(title,description,content,filename, schema=None, lang='en'):
  }
  if schema:
   base_schema['@graph'].append(schema)
+ if filename == 'media/index.html':
+  base_schema['@graph'].extend(media_video_schemas())
  if is_acg:
   base_schema['@graph'].append(acg_service_schema(canonical,title,description))
   next(item for item in base_schema['@graph'] if item.get('@type')=='WebPage')['inLanguage']=lang
