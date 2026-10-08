@@ -16,3 +16,9 @@ Only public game screenshots belong in `assets/`. Keep contracts, invoices, sett
 
 The existing `CNAME` file is controlled separately and is preserved. Review the deployment preview and current DNS, email and subdomain records before routing `aurora-studio.org` or `www.aurora-studio.org` to a new host.
 
+
+## Careers & Talent Network
+
+`/careers/` and `/zh-hant/careers/` collect expressions of interest for future and project-based publishing roles. These are not funded vacancy listings. Edit `careers_pages.py`, `careers.css` and `careers.js`; both site generators refresh the pages and navigation. Run `python careers_pages.py` to regenerate only this feature.
+
+The application helper prepares a mailto message to `publishing@aurora-studio.org`. Applicants attach their CV and send it in their own email app. There is no upload endpoint, applicant database or automatic submission. A direct email link remains available without JavaScript. Do not publish candidate information, CVs or internal screening statistics in this repository.
