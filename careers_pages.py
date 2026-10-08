@@ -56,5 +56,7 @@ def generate():
   url=f'https://www.aurora-studio.org/{route}/'
   if url not in text:text=text.replace('</urlset>',f'<url><loc>{url}</loc></url>\n</urlset>')
  sitemap.write_text(text)
+ from navigation import generate as generate_navigation
+ generate_navigation()
 
 if __name__=='__main__':generate()

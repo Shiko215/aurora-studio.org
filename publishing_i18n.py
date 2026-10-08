@@ -26,11 +26,17 @@ def generate():
   html=html.replace('<link rel="canonical" href="https://www.aurora-studio.org/publishing/">',f'<link rel="canonical" href="https://www.aurora-studio.org/{code}/publishing/">')
   html=html.replace('<meta property="og:url" content="https://www.aurora-studio.org/publishing/">',f'<meta property="og:url" content="https://www.aurora-studio.org/{code}/publishing/">')
   for original,translated in sorted(zip(keys,values),key=lambda x:-len(x[0])):
+   # The grouped header replaces the former header-only pitch CTA.
+   if original == "Pitch your game" and original not in html:
+    continue
    if original not in html:
     raise ValueError(f"Missing template source text {code}: {original}")
    html=html.replace(original,translated)
   menu='<div class="lang" aria-label="Page language">'+''.join(f'<a href="{href}" lang="{language}"'+(' aria-current="page"' if lang==language else '')+f'>{label}</a>' for language,label,href in MENU)+'</div>'
-  html=re.sub(r'<div class="lang" aria-label="Page language">.*?</div>',lambda _:menu,html,count=1,flags=re.S)
+  if 'nav-language' in html:
+   html=re.sub(r'<details class="nav-group nav-language">.*?</details>',lambda _:menu,html,count=1,flags=re.S)
+  else:
+   html=re.sub(r'<div class="lang" aria-label="Page language">.*?</div>',lambda _:menu,html,count=1,flags=re.S)
   acg=f"/{code}/acg-partnerships/" if code!="ko" else "/acg-partnerships/"
   nav_urls=[f"/{code}/","/project/","/services/",acg,f"/{code}/publishing/","/media/","/about/","/contact/"]
   nav_items=list(zip(nav_urls,locale["nav"]))
