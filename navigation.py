@@ -28,7 +28,7 @@ def header(path, old):
   return f'<details{active}><summary>{escape(title)}</summary><div class="nav-panel">'+''.join(link(u,t) for u,t in items)+'</div></details>'
  nav=link(prefix+'/',labels[0])+link('/project/',labels[1])+link(target('/publishing/',True),labels[2])
  nav+=group(labels[3],[( '/services/',labels[6]),(target('/acg-partnerships/',True),labels[7])])
- nav+=group(labels[4],[( '/about/',labels[8]),('/news/',labels[9]),(target('/media/',True),labels[10]),('/talents/',labels[11]),(target('/careers/',True),labels[12])])
+ nav+=group(labels[4],[( '/about/',labels[8]),(target('/news/',True),labels[9]),(target('/media/',True),labels[10]),('/talents/',labels[11]),(target('/careers/',True),labels[12])])
  nav+=link('/contact/',labels[5])
  brand='<a href="'+prefix+'/" class="brand" aria-label="Aurora Studio"><span class="brand-mark" aria-hidden="true"><img src="/assets/aurora-studio-logo.jpeg" alt="" width="1500" height="1000"></span><span class="brand-name">Aurora Studio</span></a>'
  lang=re.search(r'<div class="lang"[^>]*>(.*?)</div>',old,re.S)

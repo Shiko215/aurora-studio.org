@@ -35,3 +35,6 @@ for code,(lang,title,lead,work,numazu,rot,about,abouttext,news,newstext,contact,
  target=root/code/'index.html';target.parent.mkdir(exist_ok=True);target.write_text(html)
 from careers_pages import generate as generate_careers_pages
 generate_careers_pages()
+
+from news_i18n import generate as generate_news_pages
+generate_news_pages()

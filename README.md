@@ -12,6 +12,10 @@ Static website for Aurora Studio. No package installation or build command is re
 
 `build.py` (including `acg_partnerships_i18n.py` and `publishing_i18n.py`) and `localize.py` generate the checked-in HTML pages. Run `python build.py && python localize.py` from this directory after editing their source copy. Regenerate `sitemap.xml` when routes change.
 
+News indexes are available at `/news/`, `/zh-hant/news/`, `/zh-hans/news/`, `/ja/news/` and `/ko/news/`. The October 22, 2026 Revenant of Tsushima demo announcement is fully translated into all five languages. Older article bodies remain English, with explicit language labels on translated cards. Edit `news/i18n.json` for translations and the `news_updates` entry in `build.py` for the English article. `python news_i18n.py` regenerates only these news pages, localized homepage news links and sitemap entries, using the checked-in English HTML as the layout shell. Both main site generators invoke it automatically. Use `PYTHONUTF8=1` when running the legacy generators on Windows.
+
+Each news page has a self-canonical URL, reciprocal language alternates (including `x-default`), localized social metadata and matching structured data. News indexes use `CollectionPage`/`ItemList`; the announcement uses `NewsArticle` with the original publication date, plus visible development and access information. No special AI-only markup or guaranteed search/AI visibility is claimed. Search Console indexing, search performance and generative AI inclusion settings must be checked separately after deployment.
+
 Only public game screenshots belong in `assets/`. Keep contracts, invoices, settlement spreadsheets and internal test documents outside this repository.
 
 The existing `CNAME` file is controlled separately and is preserved. Review the deployment preview and current DNS, email and subdomain records before routing `aurora-studio.org` or `www.aurora-studio.org` to a new host.

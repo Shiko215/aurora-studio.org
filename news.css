@@ -1,0 +1,7 @@
+.news-article h2{font-size:clamp(1.35rem,2.5vw,2rem);line-height:1.4;margin:2.5rem 0 1rem;letter-spacing:normal}
+.news-facts{border-block:1px solid #cbd5d5;padding:1.5rem 0;margin:0 0 2.5rem}
+.news-facts h2{margin:0 0 1rem}.news-facts dl{margin:0}.news-facts dt{font-weight:800;margin-top:1rem}.news-facts dd{margin:.4rem 0 0;line-height:1.8;color:#435863}
+.news-article p,.news-article dd,.news-heading h1,.news-list h2{overflow-wrap:anywhere}
+html:lang(zh) .news-heading h1,html:lang(ja) .news-heading h1,html:lang(ko) .news-heading h1{letter-spacing:normal;line-height:1.3}
+html:lang(ja) .news-heading h1,html:lang(ja) .news-list h2{line-break:strict;overflow-wrap:normal}
+html:lang(ko) .news-heading h1,html:lang(ko) .news-list h2{word-break:keep-all;overflow-wrap:normal}
