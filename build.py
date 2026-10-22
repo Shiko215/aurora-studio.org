@@ -401,6 +401,8 @@ page(openomsi_news_title, openomsi_news_summary,
      news_schema(openomsi_news_title, openomsi_news_url, openomsi_news_summary, '2026-10-01', '/assets/openomsi/openomsi-numazu-fish-market.webp'))
 
 archive = [
+    ('2026-10-02', 'Sale', 'Project Numazu joins the Steam Sale — 25% OFF until October 9!',
+     'Explore Numazu, Shizuoka in OMSI 2 for 25% less during the limited-time Steam promotion.', '/news/project-numazu-steam-sale-oct-2026/'),
     ('2026-10-06', 'Publishing announcement', 'Aurora Studio expands into indie game publishing: Indie Games, Beyond Borders',
      'Aurora Publishing opens to indie game pitches, while Aurora Studio welcomes investor enquiries about its longer-term studio and publishing plans.', '/news/aurora-publishing-indie-games-beyond-borders/'),
     ('2026-10-01', 'Technical contribution', openomsi_news_title,
@@ -497,3 +499,6 @@ generate_publishing_pages()
 
 from careers_pages import generate as generate_careers_pages
 generate_careers_pages()
+
+from news_i18n import generate as generate_news_pages
+generate_news_pages()
