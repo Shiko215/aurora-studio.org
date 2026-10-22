@@ -230,6 +230,24 @@ page('Governance','Aurora Studio working principles for respectful collaboration
 # earlier migration summaries above until their complete originals return.
 news_updates = [
     {
+        'slug': 'revenant-of-tsushima-demo-creator-outreach', 'date': '2026-10-22',
+        'category': 'Development update',
+        'title': 'Revenant of Tsushima invites international creators to its public demo',
+        'summary': 'The public vertical-slice demo is available on itch.io as Aurora Studio welcomes international creators and player feedback to help shape continued development.',
+        'image': '/assets/revenant-cover-v2.jpg',
+        'paragraphs': [
+            'A haunted road, a forgotten shrine, and a story still taking shape: Aurora Studio invites players to discover Revenant of Tsushima through its currently available public vertical-slice demo on itch.io. The first-person folk-horror project draws on Japanese folklore and the atmosphere of the old Tōkaidō, bringing its world to players through an early playable experience.',
+            'Following the opening of public testing in September, the studio is welcoming streamers, video creators and games media from around the world to explore the demo, share their own impressions and introduce the project to their communities. Creators interested in covering the game can contact revenant-of-tsushima@aurora-studio.org with their channel or publication, audience language and the coverage they have in mind.',
+            'Player feedback is central to this next stage. We would like to hear where exploration feels clear, where the pacing holds your attention, and where the experience becomes confusing. Comments on atmosphere, interaction clarity, story comprehension and performance are especially useful. Screenshots, short recordings and steps to reproduce technical problems help the team understand what happened.',
+            'Please share feedback through the itch.io community or the project email address. When reporting an issue, include the build version, your PC specifications, and what you were doing when it occurred. International players are also welcome to point out wording or cultural context that needs a clearer explanation.',
+            'Revenant of Tsushima remains in active development. The vertical slice offers a focused look at the project’s direction; content, presentation and performance may change as development continues. Feedback from this public test will help the team assess priorities for future iterations. The full game’s release timing and final scope remain to be confirmed.',
+            'Visit itch.io for the current download, access details and development updates. Whether you play, record a session or send a thoughtful report, your perspective can help shape the road ahead.'
+        ],
+        'source': 'https://shikosama.itch.io/revenant-of-tsushima',
+        'source_label': 'Explore the public demo on itch.io',
+        'project': '/project/revenant-of-tsushima/'
+    },
+    {
         'slug': 'railway-depot-now-on-itch-io', 'date': '2026-09-16',
         'category': 'Project update', 'title': 'Railway Depot opens its itch.io development hub',
         'summary': 'A new place for pre-alpha builds, screenshots and feedback on the systems behind the railway.',
