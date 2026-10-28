@@ -1,16 +1,6 @@
+# Public website: allow search engines and AI crawlers to access all pages.
+# Applies to Googlebot, Bingbot, OAI-SearchBot, GPTBot and other crawlers.
 User-agent: *
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-User-agent: GPTBot
-Allow: /
-
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
 Allow: /
 
 Sitemap: https://www.aurora-studio.org/sitemap.xml
