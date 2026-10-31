@@ -270,7 +270,7 @@ news_updates = [
         'category': 'Project announcement',
         'title': "Revenant of Tsushima is coming to Steam — store page now live",
         'summary': "The Steam store page for Aurora Studio’s in-development folk-horror game is now live. Wishlist and follow Revenant of Tsushima for future updates.",
-        'image': '/assets/revenant-cover-v2.jpg',
+        'image': '/assets/revenant-steam-page-live.webp',
         'paragraphs': ["A new milestone for Aurora Studio’s first original game: the Steam store page for Revenant of Tsushima is now live. Players can visit the page, add the game to their wishlist and follow its development on Steam.","Revenant of Tsushima is a first-person folk-horror adventure inspired by Japanese folklore and the atmosphere of the old Tōkaidō. Players follow Tsushima Mewa, a shrine maiden caught between the human and spirit worlds, through haunted villages, shrines and forgotten roads.","The Steam page introduces the project and gives players a place to follow future announcements. The game remains in development, and its full release date has not been announced. The page going live is a chance to follow the project early; it does not mean the full game has launched.","A public vertical-slice demo is currently available on itch.io for players who want to explore an early playable part of Mewa’s journey. The demo and full game are works in progress, and content may change during development."],
         'source': 'https://store.steampowered.com/news/app/5529920/view/685269163755702331',
         'source_label': 'Read the Steam announcement',
