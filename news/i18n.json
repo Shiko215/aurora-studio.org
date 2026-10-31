@@ -1,22 +1,96 @@
 {
   "en": {
-    "title": "Studio news", "description": "News, development updates and project milestones from Aurora Studio, the Hong Kong independent game studio.",
-    "category": "Development update", "headings": ["An invitation to international creators", "Feedback that helps development", "How to report an issue", "Development continues", "Explore the public demo"],
-    "facts_title": "Demo at a glance", "facts": ["Availability", "Public vertical-slice demo on itch.io; check the page for current download and access details.", "Development status", "In development. Full-game release timing and final scope are unconfirmed.", "Creator enquiries and feedback"],
-    "demo": "Explore the public demo on itch.io", "contact": "Contact the project", "project": "Explore the project", "back": "All news", "home": "Home", "news": "News", "art": "Revenant of Tsushima key art", "english": "English",
-    "updates": "{count} updates", "read": "Read story", "ui": {}, "stories": {}
+    "title": "Studio news",
+    "description": "News, development updates and project milestones from Aurora Studio, the Hong Kong independent game studio.",
+    "category": "Development update",
+    "headings": [
+      "An invitation to international creators",
+      "Feedback that helps development",
+      "How to report an issue",
+      "Development continues",
+      "Explore the public demo"
+    ],
+    "facts_title": "Demo at a glance",
+    "facts": [
+      "Availability",
+      "Public vertical-slice demo on itch.io; check the page for current download and access details.",
+      "Development status",
+      "In development. Full-game release timing and final scope are unconfirmed.",
+      "Creator enquiries and feedback"
+    ],
+    "demo": "Explore the public demo on itch.io",
+    "contact": "Contact the project",
+    "project": "Explore the project",
+    "back": "All news",
+    "home": "Home",
+    "news": "News",
+    "art": "Revenant of Tsushima key art",
+    "english": "English",
+    "updates": "{count} updates",
+    "read": "Read story",
+    "ui": {},
+    "stories": {}
   },
   "zh-hant": {
-    "title": "工作室最新消息", "description": "香港獨立遊戲工作室 Aurora Studio 的最新消息、開發進度與作品里程碑，包括《津島・魂鬼》公開試玩資訊。",
-    "category": "開發近況", "headings": ["邀請國際創作者參與", "有助開發的玩家回饋", "如何回報問題", "開發持續進行", "體驗公開試玩版"],
-    "facts_title": "試玩資訊一覽", "facts": ["試玩狀態", "公開垂直切片試玩版已於 itch.io 提供；最新下載與取得方式請以該頁為準。", "開發狀態", "遊戲持續開發中，完整版推出時間與最終規模尚未確定。", "創作者洽詢與玩家回饋"],
-    "demo": "前往 itch.io 了解公開試玩版", "contact": "聯絡開發團隊", "project": "了解作品", "back": "所有消息", "home": "首頁", "news": "最新消息", "art": "《津島・魂鬼》主視覺", "english": "英文",
-    "updates": "共 {count} 則消息", "read": "閱讀消息",
+    "title": "工作室最新消息",
+    "description": "香港獨立遊戲工作室 Aurora Studio 的最新消息、開發進度與作品里程碑，包括《津島・魂鬼》公開試玩資訊。",
+    "category": "開發近況",
+    "headings": [
+      "邀請國際創作者參與",
+      "有助開發的玩家回饋",
+      "如何回報問題",
+      "開發持續進行",
+      "體驗公開試玩版"
+    ],
+    "facts_title": "試玩資訊一覽",
+    "facts": [
+      "試玩狀態",
+      "公開垂直切片試玩版已於 itch.io 提供；最新下載與取得方式請以該頁為準。",
+      "開發狀態",
+      "遊戲持續開發中，完整版推出時間與最終規模尚未確定。",
+      "創作者洽詢與玩家回饋"
+    ],
+    "demo": "前往 itch.io 了解公開試玩版",
+    "contact": "聯絡開發團隊",
+    "project": "了解作品",
+    "back": "所有消息",
+    "home": "首頁",
+    "news": "最新消息",
+    "art": "《津島・魂鬼》主視覺",
+    "english": "英文",
+    "updates": "共 {count} 則消息",
+    "read": "閱讀消息",
     "ui": {
-      "FROM THE STUDIO": "來自工作室", "Studio news": "工作室最新消息", "Releases, exhibitions, selections and notes from the worlds we are building.": "作品發行、展覽、入選紀錄，以及遊戲世界的開發記事。",
-      "PUBLISHING · OPEN TO PITCHES": "遊戲發行・開放提案", "Indie Games, Beyond Borders.": "獨立遊戲，跨越國界。", "Aurora Publishing welcomes indie game pitches for global market support. Aurora Studio also welcomes investor and strategic financing enquiries.": "Aurora Publishing 歡迎獨立遊戲團隊提交面向全球市場的發行提案。Aurora Studio 亦歡迎投資與策略融資洽詢。", "Read the publishing announcement ↗": "閱讀發行業務公告（英文）↗",
-      "ON THE WORLD STAGE": "走上國際舞台", "EXHIBITION · TOKYO": "展覽・東京", "SELECTION · HONG KONG": "入選・香港", "Tokyo Game Show 2025": "東京電玩展 2025", "Project Numazu was featured with Aerosoft in the German Pavilion.": "Project Numazu 與 Aerosoft 於德國館展出。", "Selected for the Games Start-Ups Gallery.": "入選 Games Start-Ups Gallery。", "Read the story ↗": "閱讀報導（英文）↗", "ALL STORIES": "所有消息", "Trailers, press &amp; play sessions ↗": "預告、媒體報導與實況 ↗",
-      "SALE": "特賣", "PUBLISHING ANNOUNCEMENT": "發行業務公告", "DEVELOPMENT UPDATE": "開發近況", "TECHNICAL CONTRIBUTION": "技術貢獻", "STUDIO ANNOUNCEMENT": "工作室公告", "PROJECT UPDATE": "作品近況", "PUBLIC TEST": "公開測試", "STUDIO UPDATE": "工作室近況", "TRAILER": "預告片", "ANNOUNCEMENT": "作品公告", "RELEASE": "正式推出", "SELECTION": "入選", "EXHIBITION": "展覽"
+      "FROM THE STUDIO": "來自工作室",
+      "Studio news": "工作室最新消息",
+      "Releases, exhibitions, selections and notes from the worlds we are building.": "作品發行、展覽、入選紀錄，以及遊戲世界的開發記事。",
+      "PUBLISHING · OPEN TO PITCHES": "遊戲發行・開放提案",
+      "Indie Games, Beyond Borders.": "獨立遊戲，跨越國界。",
+      "Aurora Publishing welcomes indie game pitches for global market support. Aurora Studio also welcomes investor and strategic financing enquiries.": "Aurora Publishing 歡迎獨立遊戲團隊提交面向全球市場的發行提案。Aurora Studio 亦歡迎投資與策略融資洽詢。",
+      "Read the publishing announcement ↗": "閱讀發行業務公告（英文）↗",
+      "ON THE WORLD STAGE": "走上國際舞台",
+      "EXHIBITION · TOKYO": "展覽・東京",
+      "SELECTION · HONG KONG": "入選・香港",
+      "Tokyo Game Show 2025": "東京電玩展 2025",
+      "Project Numazu was featured with Aerosoft in the German Pavilion.": "Project Numazu 與 Aerosoft 於德國館展出。",
+      "Selected for the Games Start-Ups Gallery.": "入選 Games Start-Ups Gallery。",
+      "Read the story ↗": "閱讀報導（英文）↗",
+      "ALL STORIES": "所有消息",
+      "Trailers, press &amp; play sessions ↗": "預告、媒體報導與實況 ↗",
+      "SALE": "特賣",
+      "PUBLISHING ANNOUNCEMENT": "發行業務公告",
+      "DEVELOPMENT UPDATE": "開發近況",
+      "TECHNICAL CONTRIBUTION": "技術貢獻",
+      "STUDIO ANNOUNCEMENT": "工作室公告",
+      "PROJECT UPDATE": "作品近況",
+      "PUBLIC TEST": "公開測試",
+      "STUDIO UPDATE": "工作室近況",
+      "TRAILER": "預告片",
+      "ANNOUNCEMENT": "作品公告",
+      "RELEASE": "正式推出",
+      "SELECTION": "入選",
+      "EXHIBITION": "展覽",
+      "PROJECT ANNOUNCEMENT": "作品公告"
     },
     "article_title": "《津島・魂鬼》邀請國際創作者體驗公開試玩版",
     "article_summary": "公開垂直切片試玩版已於 itch.io 提供。Aurora Studio 歡迎國際創作者與玩家分享體驗，為持續開發提供回饋。",
@@ -29,33 +103,128 @@
       "最新下載、取得方式及開發消息，請參閱 itch.io 頁面。無論是親自試玩、錄製過程，或提交具體報告，你的觀點都能為接下來的旅程提供參考。"
     ],
     "stories": {
-      "project-numazu-steam-sale-oct-2026": ["Project Numazu 參與 Steam 特賣：10 月 9 日前享 75 折", "限時 Steam 優惠期間，以 75 折探索 OMSI 2 中的靜岡縣沼津市。"],
-      "aurora-publishing-indie-games-beyond-borders": ["Aurora Studio 拓展獨立遊戲發行業務：獨立遊戲，跨越國界", "Aurora Publishing 開放獨立遊戲提案；Aurora Studio 亦歡迎就工作室與發行業務的長遠規劃進行投資洽詢。"],
-      "aurora-openomsi-technical-contributions": ["Aurora Studio 擴大對 openOMSI 的上游技術貢獻", "Project Numazu 成為製作規模的相容性測試場景，協助開源模擬器修正問題與加入亞洲語言在地化。"],
-      "acg-partnerships-launch": ["Aurora Studio 推出跨境 ACG 合作服務", "以香港為基地，協助品牌與場地策劃連接大灣區、日本及國際市場的 ACG 合作。"],
-      "a-day-in-the-depot": ["車廠的一天：Railway Depot: Operations & Empire", "走近運作中的車廠，了解背後的人員與決策。"],
-      "railway-depot-now-on-itch-io": ["Railway Depot 開設 itch.io 開發專頁", "集中提供 pre-alpha 版本、畫面與回饋，介紹鐵路背後的營運系統。"],
-      "revenant-of-tsushima-vertical-slice-public-test": ["《津島・魂鬼》垂直切片開放公開測試", "早期可玩版本展示探索、靈視與神社儀式的初步體驗。"],
-      "project-numazu-tga-2026-fyc": ["Project Numazu 展開 TGA 2026 For Your Consideration 宣傳", "這是爭取評選考慮的宣傳活動，並非獲得提名。"],
-      "revenant-of-tsushima-teaser-and-support": ["觀看《津島・魂鬼》前導預告", "團隊分享首支前導預告，以及支持持續開發的方式。"],
-      "aurora-started-revenant-tsushima": ["Aurora Studio 公布《津島・魂鬼》", "原創第一人稱民俗恐怖旅程，跟隨津島真羽踏上幽異的東海道。"],
-      "project-numazu-is-officially-available-on-steam": ["Project Numazu 已於 Steam 推出", "我們為 OMSI 2 重現的沼津市正式推出。"],
-      "omsi-2-add-on-project-numazu-steam-page-now-live": ["Project Numazu Steam 商店頁公開", "商店頁在發售前向玩家介紹這款城市模擬作品。"],
-      "aurora-studio-selected-for-siggraph-asia-2025": ["Project Numazu 入選 SIGGRAPH Asia 2025 Games", "Aurora Studio 攜 Project Numazu 參與香港 Games Start-Ups Gallery。"],
-      "aurora-studio-in-tgs-2025": ["Project Numazu 亮相東京電玩展 2025", "Aurora Studio 與發行商 Aerosoft 於德國館展示 Project Numazu。"]
+      "project-numazu-steam-sale-oct-2026": [
+        "Project Numazu 參與 Steam 特賣：10 月 9 日前享 75 折",
+        "限時 Steam 優惠期間，以 75 折探索 OMSI 2 中的靜岡縣沼津市。"
+      ],
+      "aurora-publishing-indie-games-beyond-borders": [
+        "Aurora Studio 拓展獨立遊戲發行業務：獨立遊戲，跨越國界",
+        "Aurora Publishing 開放獨立遊戲提案；Aurora Studio 亦歡迎就工作室與發行業務的長遠規劃進行投資洽詢。"
+      ],
+      "aurora-openomsi-technical-contributions": [
+        "Aurora Studio 擴大對 openOMSI 的上游技術貢獻",
+        "Project Numazu 成為製作規模的相容性測試場景，協助開源模擬器修正問題與加入亞洲語言在地化。"
+      ],
+      "acg-partnerships-launch": [
+        "Aurora Studio 推出跨境 ACG 合作服務",
+        "以香港為基地，協助品牌與場地策劃連接大灣區、日本及國際市場的 ACG 合作。"
+      ],
+      "a-day-in-the-depot": [
+        "車廠的一天：Railway Depot: Operations & Empire",
+        "走近運作中的車廠，了解背後的人員與決策。"
+      ],
+      "railway-depot-now-on-itch-io": [
+        "Railway Depot 開設 itch.io 開發專頁",
+        "集中提供 pre-alpha 版本、畫面與回饋，介紹鐵路背後的營運系統。"
+      ],
+      "revenant-of-tsushima-vertical-slice-public-test": [
+        "《津島・魂鬼》垂直切片開放公開測試",
+        "早期可玩版本展示探索、靈視與神社儀式的初步體驗。"
+      ],
+      "project-numazu-tga-2026-fyc": [
+        "Project Numazu 展開 TGA 2026 For Your Consideration 宣傳",
+        "這是爭取評選考慮的宣傳活動，並非獲得提名。"
+      ],
+      "revenant-of-tsushima-teaser-and-support": [
+        "觀看《津島・魂鬼》前導預告",
+        "團隊分享首支前導預告，以及支持持續開發的方式。"
+      ],
+      "aurora-started-revenant-tsushima": [
+        "Aurora Studio 公布《津島・魂鬼》",
+        "原創第一人稱民俗恐怖旅程，跟隨津島真羽踏上幽異的東海道。"
+      ],
+      "project-numazu-is-officially-available-on-steam": [
+        "Project Numazu 已於 Steam 推出",
+        "我們為 OMSI 2 重現的沼津市正式推出。"
+      ],
+      "omsi-2-add-on-project-numazu-steam-page-now-live": [
+        "Project Numazu Steam 商店頁公開",
+        "商店頁在發售前向玩家介紹這款城市模擬作品。"
+      ],
+      "aurora-studio-selected-for-siggraph-asia-2025": [
+        "Project Numazu 入選 SIGGRAPH Asia 2025 Games",
+        "Aurora Studio 攜 Project Numazu 參與香港 Games Start-Ups Gallery。"
+      ],
+      "aurora-studio-in-tgs-2025": [
+        "Project Numazu 亮相東京電玩展 2025",
+        "Aurora Studio 與發行商 Aerosoft 於德國館展示 Project Numazu。"
+      ],
+      "revenant-of-tsushima-steam-store-page-live": [
+        "《津島・魂鬼》Steam 商店頁現已上線",
+        "Aurora Studio 開發中的民俗恐怖遊戲《津島・魂鬼》Steam 商店頁現已公開，歡迎加入願望清單並追蹤後續消息。"
+      ]
     }
   },
   "zh-hans": {
-    "title": "工作室最新消息", "description": "香港独立游戏工作室 Aurora Studio 的最新消息、开发进度与作品里程碑，包括《津岛・魂鬼》公开试玩信息。",
-    "category": "开发近况", "headings": ["邀请国际创作者参与", "有助开发的玩家反馈", "如何报告问题", "开发持续推进", "体验公开试玩版"],
-    "facts_title": "试玩信息一览", "facts": ["试玩状态", "公开垂直切片试玩版已在 itch.io 提供；最新下载与获取方式请以该页面为准。", "开发状态", "游戏持续开发中，完整版推出时间与最终规模尚未确定。", "创作者咨询与玩家反馈"],
-    "demo": "前往 itch.io 了解公开试玩版", "contact": "联系开发团队", "project": "了解作品", "back": "所有消息", "home": "首页", "news": "最新消息", "art": "《津岛・魂鬼》主视觉", "english": "英文",
-    "updates": "共 {count} 则消息", "read": "阅读消息",
+    "title": "工作室最新消息",
+    "description": "香港独立游戏工作室 Aurora Studio 的最新消息、开发进度与作品里程碑，包括《津岛・魂鬼》公开试玩信息。",
+    "category": "开发近况",
+    "headings": [
+      "邀请国际创作者参与",
+      "有助开发的玩家反馈",
+      "如何报告问题",
+      "开发持续推进",
+      "体验公开试玩版"
+    ],
+    "facts_title": "试玩信息一览",
+    "facts": [
+      "试玩状态",
+      "公开垂直切片试玩版已在 itch.io 提供；最新下载与获取方式请以该页面为准。",
+      "开发状态",
+      "游戏持续开发中，完整版推出时间与最终规模尚未确定。",
+      "创作者咨询与玩家反馈"
+    ],
+    "demo": "前往 itch.io 了解公开试玩版",
+    "contact": "联系开发团队",
+    "project": "了解作品",
+    "back": "所有消息",
+    "home": "首页",
+    "news": "最新消息",
+    "art": "《津岛・魂鬼》主视觉",
+    "english": "英文",
+    "updates": "共 {count} 则消息",
+    "read": "阅读消息",
     "ui": {
-      "FROM THE STUDIO": "来自工作室", "Studio news": "工作室最新消息", "Releases, exhibitions, selections and notes from the worlds we are building.": "作品发行、展览、入选记录，以及游戏世界的开发笔记。",
-      "PUBLISHING · OPEN TO PITCHES": "游戏发行・开放提案", "Indie Games, Beyond Borders.": "独立游戏，跨越国界。", "Aurora Publishing welcomes indie game pitches for global market support. Aurora Studio also welcomes investor and strategic financing enquiries.": "Aurora Publishing 欢迎独立游戏团队提交面向全球市场的发行提案。Aurora Studio 也欢迎投资与战略融资咨询。", "Read the publishing announcement ↗": "阅读发行业务公告（英文）↗",
-      "ON THE WORLD STAGE": "走上国际舞台", "EXHIBITION · TOKYO": "展览・东京", "SELECTION · HONG KONG": "入选・香港", "Tokyo Game Show 2025": "东京电玩展 2025", "Project Numazu was featured with Aerosoft in the German Pavilion.": "Project Numazu 与 Aerosoft 在德国馆展出。", "Selected for the Games Start-Ups Gallery.": "入选 Games Start-Ups Gallery。", "Read the story ↗": "阅读报道（英文）↗", "ALL STORIES": "所有消息", "Trailers, press &amp; play sessions ↗": "预告、媒体报道与实况 ↗",
-      "SALE": "特卖", "PUBLISHING ANNOUNCEMENT": "发行业务公告", "DEVELOPMENT UPDATE": "开发近况", "TECHNICAL CONTRIBUTION": "技术贡献", "STUDIO ANNOUNCEMENT": "工作室公告", "PROJECT UPDATE": "作品近况", "PUBLIC TEST": "公开测试", "STUDIO UPDATE": "工作室近况", "TRAILER": "预告片", "ANNOUNCEMENT": "作品公告", "RELEASE": "正式推出", "SELECTION": "入选", "EXHIBITION": "展览"
+      "FROM THE STUDIO": "来自工作室",
+      "Studio news": "工作室最新消息",
+      "Releases, exhibitions, selections and notes from the worlds we are building.": "作品发行、展览、入选记录，以及游戏世界的开发笔记。",
+      "PUBLISHING · OPEN TO PITCHES": "游戏发行・开放提案",
+      "Indie Games, Beyond Borders.": "独立游戏，跨越国界。",
+      "Aurora Publishing welcomes indie game pitches for global market support. Aurora Studio also welcomes investor and strategic financing enquiries.": "Aurora Publishing 欢迎独立游戏团队提交面向全球市场的发行提案。Aurora Studio 也欢迎投资与战略融资咨询。",
+      "Read the publishing announcement ↗": "阅读发行业务公告（英文）↗",
+      "ON THE WORLD STAGE": "走上国际舞台",
+      "EXHIBITION · TOKYO": "展览・东京",
+      "SELECTION · HONG KONG": "入选・香港",
+      "Tokyo Game Show 2025": "东京电玩展 2025",
+      "Project Numazu was featured with Aerosoft in the German Pavilion.": "Project Numazu 与 Aerosoft 在德国馆展出。",
+      "Selected for the Games Start-Ups Gallery.": "入选 Games Start-Ups Gallery。",
+      "Read the story ↗": "阅读报道（英文）↗",
+      "ALL STORIES": "所有消息",
+      "Trailers, press &amp; play sessions ↗": "预告、媒体报道与实况 ↗",
+      "SALE": "特卖",
+      "PUBLISHING ANNOUNCEMENT": "发行业务公告",
+      "DEVELOPMENT UPDATE": "开发近况",
+      "TECHNICAL CONTRIBUTION": "技术贡献",
+      "STUDIO ANNOUNCEMENT": "工作室公告",
+      "PROJECT UPDATE": "作品近况",
+      "PUBLIC TEST": "公开测试",
+      "STUDIO UPDATE": "工作室近况",
+      "TRAILER": "预告片",
+      "ANNOUNCEMENT": "作品公告",
+      "RELEASE": "正式推出",
+      "SELECTION": "入选",
+      "EXHIBITION": "展览",
+      "PROJECT ANNOUNCEMENT": "作品公告"
     },
     "article_title": "《津岛・魂鬼》邀请国际创作者体验公开试玩版",
     "article_summary": "公开垂直切片试玩版已在 itch.io 提供。Aurora Studio 欢迎国际创作者与玩家分享体验，为持续开发提供反馈。",
@@ -68,33 +237,128 @@
       "最新下载、获取方式及开发消息，请参阅 itch.io 页面。无论是亲自试玩、录制过程，或提交具体报告，你的观点都能为接下来的旅程提供参考。"
     ],
     "stories": {
-      "project-numazu-steam-sale-oct-2026": ["Project Numazu 参与 Steam 特卖：10 月 9 日前享 75 折", "限时 Steam 优惠期间，以 75 折探索 OMSI 2 中的静冈县沼津市。"],
-      "aurora-publishing-indie-games-beyond-borders": ["Aurora Studio 拓展独立游戏发行业务：独立游戏，跨越国界", "Aurora Publishing 开放独立游戏提案；Aurora Studio 也欢迎就工作室与发行业务的长远规划进行投资咨询。"],
-      "aurora-openomsi-technical-contributions": ["Aurora Studio 扩大对 openOMSI 的上游技术贡献", "Project Numazu 成为制作规模的兼容性测试场景，协助开源模拟器修复问题与加入亚洲语言本地化。"],
-      "acg-partnerships-launch": ["Aurora Studio 推出跨境 ACG 合作服务", "以香港为基地，协助品牌与场地策划连接大湾区、日本及国际市场的 ACG 合作。"],
-      "a-day-in-the-depot": ["车厂的一天：Railway Depot: Operations & Empire", "走近运作中的车厂，了解背后的人员与决策。"],
-      "railway-depot-now-on-itch-io": ["Railway Depot 开设 itch.io 开发专页", "集中提供 pre-alpha 版本、画面与反馈，介绍铁路背后的运营系统。"],
-      "revenant-of-tsushima-vertical-slice-public-test": ["《津岛・魂鬼》垂直切片开放公开测试", "早期可玩版本展示探索、灵视与神社仪式的初步体验。"],
-      "project-numazu-tga-2026-fyc": ["Project Numazu 展开 TGA 2026 For Your Consideration 宣传", "这是争取评选考虑的宣传活动，并非获得提名。"],
-      "revenant-of-tsushima-teaser-and-support": ["观看《津岛・魂鬼》先导预告", "团队分享首支先导预告，以及支持持续开发的方式。"],
-      "aurora-started-revenant-tsushima": ["Aurora Studio 公布《津岛・魂鬼》", "原创第一人称民俗恐怖旅程，跟随津岛真羽踏上幽异的东海道。"],
-      "project-numazu-is-officially-available-on-steam": ["Project Numazu 已在 Steam 推出", "我们为 OMSI 2 重现的沼津市正式推出。"],
-      "omsi-2-add-on-project-numazu-steam-page-now-live": ["Project Numazu Steam 商店页面公开", "商店页面在发售前向玩家介绍这款城市模拟作品。"],
-      "aurora-studio-selected-for-siggraph-asia-2025": ["Project Numazu 入选 SIGGRAPH Asia 2025 Games", "Aurora Studio 携 Project Numazu 参与香港 Games Start-Ups Gallery。"],
-      "aurora-studio-in-tgs-2025": ["Project Numazu 亮相东京电玩展 2025", "Aurora Studio 与发行商 Aerosoft 在德国馆展示 Project Numazu。"]
+      "project-numazu-steam-sale-oct-2026": [
+        "Project Numazu 参与 Steam 特卖：10 月 9 日前享 75 折",
+        "限时 Steam 优惠期间，以 75 折探索 OMSI 2 中的静冈县沼津市。"
+      ],
+      "aurora-publishing-indie-games-beyond-borders": [
+        "Aurora Studio 拓展独立游戏发行业务：独立游戏，跨越国界",
+        "Aurora Publishing 开放独立游戏提案；Aurora Studio 也欢迎就工作室与发行业务的长远规划进行投资咨询。"
+      ],
+      "aurora-openomsi-technical-contributions": [
+        "Aurora Studio 扩大对 openOMSI 的上游技术贡献",
+        "Project Numazu 成为制作规模的兼容性测试场景，协助开源模拟器修复问题与加入亚洲语言本地化。"
+      ],
+      "acg-partnerships-launch": [
+        "Aurora Studio 推出跨境 ACG 合作服务",
+        "以香港为基地，协助品牌与场地策划连接大湾区、日本及国际市场的 ACG 合作。"
+      ],
+      "a-day-in-the-depot": [
+        "车厂的一天：Railway Depot: Operations & Empire",
+        "走近运作中的车厂，了解背后的人员与决策。"
+      ],
+      "railway-depot-now-on-itch-io": [
+        "Railway Depot 开设 itch.io 开发专页",
+        "集中提供 pre-alpha 版本、画面与反馈，介绍铁路背后的运营系统。"
+      ],
+      "revenant-of-tsushima-vertical-slice-public-test": [
+        "《津岛・魂鬼》垂直切片开放公开测试",
+        "早期可玩版本展示探索、灵视与神社仪式的初步体验。"
+      ],
+      "project-numazu-tga-2026-fyc": [
+        "Project Numazu 展开 TGA 2026 For Your Consideration 宣传",
+        "这是争取评选考虑的宣传活动，并非获得提名。"
+      ],
+      "revenant-of-tsushima-teaser-and-support": [
+        "观看《津岛・魂鬼》先导预告",
+        "团队分享首支先导预告，以及支持持续开发的方式。"
+      ],
+      "aurora-started-revenant-tsushima": [
+        "Aurora Studio 公布《津岛・魂鬼》",
+        "原创第一人称民俗恐怖旅程，跟随津岛真羽踏上幽异的东海道。"
+      ],
+      "project-numazu-is-officially-available-on-steam": [
+        "Project Numazu 已在 Steam 推出",
+        "我们为 OMSI 2 重现的沼津市正式推出。"
+      ],
+      "omsi-2-add-on-project-numazu-steam-page-now-live": [
+        "Project Numazu Steam 商店页面公开",
+        "商店页面在发售前向玩家介绍这款城市模拟作品。"
+      ],
+      "aurora-studio-selected-for-siggraph-asia-2025": [
+        "Project Numazu 入选 SIGGRAPH Asia 2025 Games",
+        "Aurora Studio 携 Project Numazu 参与香港 Games Start-Ups Gallery。"
+      ],
+      "aurora-studio-in-tgs-2025": [
+        "Project Numazu 亮相东京电玩展 2025",
+        "Aurora Studio 与发行商 Aerosoft 在德国馆展示 Project Numazu。"
+      ],
+      "revenant-of-tsushima-steam-store-page-live": [
+        "《津岛·魂鬼》Steam 商店页面现已上线",
+        "Aurora Studio 开发中的民俗恐怖游戏《津岛·魂鬼》Steam 商店页面现已公开，欢迎加入愿望单并关注后续消息。"
+      ]
     }
   },
   "ja": {
-    "title": "スタジオニュース", "description": "香港のインディーゲームスタジオ Aurora Studio のニュース、開発状況、作品の歩み。『津島・魂鬼』の公開デモ情報もお届けします。",
-    "category": "開発状況", "headings": ["世界のクリエイターの皆さまへ", "開発に役立つフィードバック", "不具合の報告方法", "開発は続きます", "公開デモを体験する"],
-    "facts_title": "デモの基本情報", "facts": ["公開状況", "公開バーティカルスライスデモを itch.io で提供中です。最新のダウンロード方法と利用条件は同ページをご確認ください。", "開発状況", "開発中です。製品版の発売時期と最終的な規模は未定です。", "取材・配信のご相談とフィードバック"],
-    "demo": "itch.io で公開デモを確認する", "contact": "開発チームに連絡する", "project": "作品紹介", "back": "ニュース一覧", "home": "ホーム", "news": "ニュース", "art": "『津島・魂鬼』キービジュアル", "english": "英語",
-    "updates": "全 {count} 件", "read": "記事を読む",
+    "title": "スタジオニュース",
+    "description": "香港のインディーゲームスタジオ Aurora Studio のニュース、開発状況、作品の歩み。『津島・魂鬼』の公開デモ情報もお届けします。",
+    "category": "開発状況",
+    "headings": [
+      "世界のクリエイターの皆さまへ",
+      "開発に役立つフィードバック",
+      "不具合の報告方法",
+      "開発は続きます",
+      "公開デモを体験する"
+    ],
+    "facts_title": "デモの基本情報",
+    "facts": [
+      "公開状況",
+      "公開バーティカルスライスデモを itch.io で提供中です。最新のダウンロード方法と利用条件は同ページをご確認ください。",
+      "開発状況",
+      "開発中です。製品版の発売時期と最終的な規模は未定です。",
+      "取材・配信のご相談とフィードバック"
+    ],
+    "demo": "itch.io で公開デモを確認する",
+    "contact": "開発チームに連絡する",
+    "project": "作品紹介",
+    "back": "ニュース一覧",
+    "home": "ホーム",
+    "news": "ニュース",
+    "art": "『津島・魂鬼』キービジュアル",
+    "english": "英語",
+    "updates": "全 {count} 件",
+    "read": "記事を読む",
     "ui": {
-      "FROM THE STUDIO": "スタジオから", "Studio news": "スタジオニュース", "Releases, exhibitions, selections and notes from the worlds we are building.": "作品の発売、出展、選出情報と、開発中の世界から届く記録。",
-      "PUBLISHING · OPEN TO PITCHES": "パブリッシング・企画募集中", "Indie Games, Beyond Borders.": "インディーゲームを、国境の先へ。", "Aurora Publishing welcomes indie game pitches for global market support. Aurora Studio also welcomes investor and strategic financing enquiries.": "Aurora Publishing は世界展開を目指すインディーゲームの企画を募集しています。Aurora Studio では投資や戦略的資金調達のご相談も受け付けています。", "Read the publishing announcement ↗": "事業発表を読む（英語）↗",
-      "ON THE WORLD STAGE": "世界の舞台へ", "EXHIBITION · TOKYO": "出展・東京", "SELECTION · HONG KONG": "選出・香港", "Tokyo Game Show 2025": "東京ゲームショウ2025", "Project Numazu was featured with Aerosoft in the German Pavilion.": "Project Numazu を Aerosoft とともにドイツパビリオンで展示しました。", "Selected for the Games Start-Ups Gallery.": "Games Start-Ups Gallery に選出されました。", "Read the story ↗": "記事を読む（英語）↗", "ALL STORIES": "ニュース一覧", "Trailers, press &amp; play sessions ↗": "映像・メディア掲載・プレイ動画 ↗",
-      "SALE": "セール", "PUBLISHING ANNOUNCEMENT": "パブリッシング事業発表", "DEVELOPMENT UPDATE": "開発状況", "TECHNICAL CONTRIBUTION": "技術貢献", "STUDIO ANNOUNCEMENT": "スタジオからのお知らせ", "PROJECT UPDATE": "作品の近況", "PUBLIC TEST": "公開テスト", "STUDIO UPDATE": "スタジオの近況", "TRAILER": "トレーラー", "ANNOUNCEMENT": "作品発表", "RELEASE": "発売", "SELECTION": "選出", "EXHIBITION": "出展"
+      "FROM THE STUDIO": "スタジオから",
+      "Studio news": "スタジオニュース",
+      "Releases, exhibitions, selections and notes from the worlds we are building.": "作品の発売、出展、選出情報と、開発中の世界から届く記録。",
+      "PUBLISHING · OPEN TO PITCHES": "パブリッシング・企画募集中",
+      "Indie Games, Beyond Borders.": "インディーゲームを、国境の先へ。",
+      "Aurora Publishing welcomes indie game pitches for global market support. Aurora Studio also welcomes investor and strategic financing enquiries.": "Aurora Publishing は世界展開を目指すインディーゲームの企画を募集しています。Aurora Studio では投資や戦略的資金調達のご相談も受け付けています。",
+      "Read the publishing announcement ↗": "事業発表を読む（英語）↗",
+      "ON THE WORLD STAGE": "世界の舞台へ",
+      "EXHIBITION · TOKYO": "出展・東京",
+      "SELECTION · HONG KONG": "選出・香港",
+      "Tokyo Game Show 2025": "東京ゲームショウ2025",
+      "Project Numazu was featured with Aerosoft in the German Pavilion.": "Project Numazu を Aerosoft とともにドイツパビリオンで展示しました。",
+      "Selected for the Games Start-Ups Gallery.": "Games Start-Ups Gallery に選出されました。",
+      "Read the story ↗": "記事を読む（英語）↗",
+      "ALL STORIES": "ニュース一覧",
+      "Trailers, press &amp; play sessions ↗": "映像・メディア掲載・プレイ動画 ↗",
+      "SALE": "セール",
+      "PUBLISHING ANNOUNCEMENT": "パブリッシング事業発表",
+      "DEVELOPMENT UPDATE": "開発状況",
+      "TECHNICAL CONTRIBUTION": "技術貢献",
+      "STUDIO ANNOUNCEMENT": "スタジオからのお知らせ",
+      "PROJECT UPDATE": "作品の近況",
+      "PUBLIC TEST": "公開テスト",
+      "STUDIO UPDATE": "スタジオの近況",
+      "TRAILER": "トレーラー",
+      "ANNOUNCEMENT": "作品発表",
+      "RELEASE": "発売",
+      "SELECTION": "選出",
+      "EXHIBITION": "出展",
+      "PROJECT ANNOUNCEMENT": "プロジェクトのお知らせ"
     },
     "article_title": "『津島・魂鬼』公開デモへ、世界のクリエイターをご招待",
     "article_summary": "公開バーティカルスライスデモを itch.io で提供中。Aurora Studio は世界のクリエイターとプレイヤーの感想を募り、開発を続けています。",
@@ -107,33 +371,128 @@
       "最新のダウンロード方法、利用条件、開発情報は itch.io のページをご確認ください。プレイすること、動画に残すこと、具体的な報告を送ること。その一つひとつの視点が、これからの旅を考える手がかりになります。"
     ],
     "stories": {
-      "project-numazu-steam-sale-oct-2026": ["Project Numazu が Steam セールに参加：10 月 9 日まで 25% オフ", "期間限定の Steam セールで、OMSI 2 に再現された静岡県沼津市を 25% オフで体験できます。"],
-      "aurora-publishing-indie-games-beyond-borders": ["Aurora Studio、インディーゲームのパブリッシングへ事業拡大", "Aurora Publishing が企画募集を開始。スタジオと出版事業の長期計画に関する投資のご相談も受け付けています。"],
-      "aurora-openomsi-technical-contributions": ["Aurora Studio、openOMSI への技術貢献を拡大", "Project Numazu を実制作規模の互換性テストに活用し、修正やアジア言語対応をオープンソースのシミュレーターに提供しています。"],
-      "acg-partnerships-launch": ["Aurora Studio、国境を越える ACG 連携サービスを開始", "香港を拠点に、ブランドや施設と大湾区、日本、海外市場をつなぐ ACG コラボレーションを支援します。"],
-      "a-day-in-the-depot": ["車両基地の一日：Railway Depot: Operations & Empire", "車両基地の日常を支える人々と判断に迫ります。"],
-      "railway-depot-now-on-itch-io": ["Railway Depot、itch.io に開発拠点を開設", "プレアルファ版、スクリーンショット、鉄道運営システムへのフィードバックをまとめる新たな場所です。"],
-      "revenant-of-tsushima-vertical-slice-public-test": ["『津島・魂鬼』バーティカルスライスの公開テストを開始", "早期のプレイ可能なビルドで、探索、霊視、神社の儀式の一端を体験できます。"],
-      "project-numazu-tga-2026-fyc": ["Project Numazu、TGA 2026 For Your Consideration キャンペーン", "選考での検討を呼びかけるキャンペーンであり、ノミネートを意味するものではありません。"],
-      "revenant-of-tsushima-teaser-and-support": ["『津島・魂鬼』ティーザーを公開", "初のティーザー映像と、開発を支援する方法を紹介しました。"],
-      "aurora-started-revenant-tsushima": ["Aurora Studio、『津島・魂鬼』を発表", "津島真羽とともに怪異の東海道を歩む、オリジナルの一人称フォークホラー。"],
-      "project-numazu-is-officially-available-on-steam": ["Project Numazu、Steam で発売", "OMSI 2 向けに再現した沼津市をお届けします。"],
-      "omsi-2-add-on-project-numazu-steam-page-now-live": ["Project Numazu の Steam ストアページを公開", "発売に先立ち、街を再現するシミュレーション作品を紹介しました。"],
-      "aurora-studio-selected-for-siggraph-asia-2025": ["Project Numazu、SIGGRAPH Asia 2025 Games に選出", "香港の Games Start-Ups Gallery に Project Numazu とともに参加しました。"],
-      "aurora-studio-in-tgs-2025": ["Project Numazu、東京ゲームショウ2025 に出展", "パブリッシャー Aerosoft とともにドイツパビリオンで作品を紹介しました。"]
+      "project-numazu-steam-sale-oct-2026": [
+        "Project Numazu が Steam セールに参加：10 月 9 日まで 25% オフ",
+        "期間限定の Steam セールで、OMSI 2 に再現された静岡県沼津市を 25% オフで体験できます。"
+      ],
+      "aurora-publishing-indie-games-beyond-borders": [
+        "Aurora Studio、インディーゲームのパブリッシングへ事業拡大",
+        "Aurora Publishing が企画募集を開始。スタジオと出版事業の長期計画に関する投資のご相談も受け付けています。"
+      ],
+      "aurora-openomsi-technical-contributions": [
+        "Aurora Studio、openOMSI への技術貢献を拡大",
+        "Project Numazu を実制作規模の互換性テストに活用し、修正やアジア言語対応をオープンソースのシミュレーターに提供しています。"
+      ],
+      "acg-partnerships-launch": [
+        "Aurora Studio、国境を越える ACG 連携サービスを開始",
+        "香港を拠点に、ブランドや施設と大湾区、日本、海外市場をつなぐ ACG コラボレーションを支援します。"
+      ],
+      "a-day-in-the-depot": [
+        "車両基地の一日：Railway Depot: Operations & Empire",
+        "車両基地の日常を支える人々と判断に迫ります。"
+      ],
+      "railway-depot-now-on-itch-io": [
+        "Railway Depot、itch.io に開発拠点を開設",
+        "プレアルファ版、スクリーンショット、鉄道運営システムへのフィードバックをまとめる新たな場所です。"
+      ],
+      "revenant-of-tsushima-vertical-slice-public-test": [
+        "『津島・魂鬼』バーティカルスライスの公開テストを開始",
+        "早期のプレイ可能なビルドで、探索、霊視、神社の儀式の一端を体験できます。"
+      ],
+      "project-numazu-tga-2026-fyc": [
+        "Project Numazu、TGA 2026 For Your Consideration キャンペーン",
+        "選考での検討を呼びかけるキャンペーンであり、ノミネートを意味するものではありません。"
+      ],
+      "revenant-of-tsushima-teaser-and-support": [
+        "『津島・魂鬼』ティーザーを公開",
+        "初のティーザー映像と、開発を支援する方法を紹介しました。"
+      ],
+      "aurora-started-revenant-tsushima": [
+        "Aurora Studio、『津島・魂鬼』を発表",
+        "津島真羽とともに怪異の東海道を歩む、オリジナルの一人称フォークホラー。"
+      ],
+      "project-numazu-is-officially-available-on-steam": [
+        "Project Numazu、Steam で発売",
+        "OMSI 2 向けに再現した沼津市をお届けします。"
+      ],
+      "omsi-2-add-on-project-numazu-steam-page-now-live": [
+        "Project Numazu の Steam ストアページを公開",
+        "発売に先立ち、街を再現するシミュレーション作品を紹介しました。"
+      ],
+      "aurora-studio-selected-for-siggraph-asia-2025": [
+        "Project Numazu、SIGGRAPH Asia 2025 Games に選出",
+        "香港の Games Start-Ups Gallery に Project Numazu とともに参加しました。"
+      ],
+      "aurora-studio-in-tgs-2025": [
+        "Project Numazu、東京ゲームショウ2025 に出展",
+        "パブリッシャー Aerosoft とともにドイツパビリオンで作品を紹介しました。"
+      ],
+      "revenant-of-tsushima-steam-store-page-live": [
+        "『津島・魂鬼』Steamストアページ公開",
+        "Aurora Studio 開発中のフォークホラーゲーム『津島・魂鬼』のSteamストアページが公開されました。ウィッシュリストに登録して、今後の情報をお待ちください。"
+      ]
     }
   },
   "ko": {
-    "title": "스튜디오 소식", "description": "홍콩 인디 게임 개발사 Aurora Studio의 뉴스, 개발 현황과 프로젝트 소식. Revenant of Tsushima 공개 데모 정보도 확인하세요.",
-    "category": "개발 소식", "headings": ["전 세계 크리에이터를 초대합니다", "개발에 도움이 되는 피드백", "문제 제보 방법", "개발은 계속됩니다", "공개 데모 체험하기"],
-    "facts_title": "데모 정보 한눈에 보기", "facts": ["공개 현황", "공개 버티컬 슬라이스 데모를 itch.io에서 이용할 수 있습니다. 최신 다운로드 방법과 이용 조건은 해당 페이지를 확인해 주세요.", "개발 상태", "개발 중입니다. 정식 버전의 출시 시기와 최종 규모는 아직 확정되지 않았습니다.", "크리에이터 문의 및 플레이 피드백"],
-    "demo": "itch.io에서 공개 데모 확인하기", "contact": "개발팀에 문의하기", "project": "프로젝트 소개", "back": "전체 소식", "home": "홈", "news": "뉴스", "art": "Revenant of Tsushima 키 아트", "english": "영어",
-    "updates": "소식 {count}건", "read": "소식 읽기",
+    "title": "스튜디오 소식",
+    "description": "홍콩 인디 게임 개발사 Aurora Studio의 뉴스, 개발 현황과 프로젝트 소식. Revenant of Tsushima 공개 데모 정보도 확인하세요.",
+    "category": "개발 소식",
+    "headings": [
+      "전 세계 크리에이터를 초대합니다",
+      "개발에 도움이 되는 피드백",
+      "문제 제보 방법",
+      "개발은 계속됩니다",
+      "공개 데모 체험하기"
+    ],
+    "facts_title": "데모 정보 한눈에 보기",
+    "facts": [
+      "공개 현황",
+      "공개 버티컬 슬라이스 데모를 itch.io에서 이용할 수 있습니다. 최신 다운로드 방법과 이용 조건은 해당 페이지를 확인해 주세요.",
+      "개발 상태",
+      "개발 중입니다. 정식 버전의 출시 시기와 최종 규모는 아직 확정되지 않았습니다.",
+      "크리에이터 문의 및 플레이 피드백"
+    ],
+    "demo": "itch.io에서 공개 데모 확인하기",
+    "contact": "개발팀에 문의하기",
+    "project": "프로젝트 소개",
+    "back": "전체 소식",
+    "home": "홈",
+    "news": "뉴스",
+    "art": "Revenant of Tsushima 키 아트",
+    "english": "영어",
+    "updates": "소식 {count}건",
+    "read": "소식 읽기",
     "ui": {
-      "FROM THE STUDIO": "스튜디오에서", "Studio news": "스튜디오 소식", "Releases, exhibitions, selections and notes from the worlds we are building.": "출시, 전시, 선정 소식과 우리가 만드는 세계의 개발 기록입니다.",
-      "PUBLISHING · OPEN TO PITCHES": "퍼블리싱 · 제안 접수 중", "Indie Games, Beyond Borders.": "국경을 넘어, 인디 게임과 함께.", "Aurora Publishing welcomes indie game pitches for global market support. Aurora Studio also welcomes investor and strategic financing enquiries.": "Aurora Publishing은 글로벌 시장 진출을 위한 인디 게임 제안을 받습니다. Aurora Studio는 투자 및 전략적 자금 조달에 관한 문의도 환영합니다.", "Read the publishing announcement ↗": "퍼블리싱 발표 읽기 (영어) ↗",
-      "ON THE WORLD STAGE": "세계 무대에서", "EXHIBITION · TOKYO": "전시 · 도쿄", "SELECTION · HONG KONG": "선정 · 홍콩", "Tokyo Game Show 2025": "도쿄 게임쇼 2025", "Project Numazu was featured with Aerosoft in the German Pavilion.": "Project Numazu를 Aerosoft와 함께 독일관에서 선보였습니다.", "Selected for the Games Start-Ups Gallery.": "Games Start-Ups Gallery에 선정되었습니다.", "Read the story ↗": "기사 읽기 (영어) ↗", "ALL STORIES": "전체 소식", "Trailers, press &amp; play sessions ↗": "트레일러 · 언론 보도 · 플레이 영상 ↗",
-      "SALE": "할인", "PUBLISHING ANNOUNCEMENT": "퍼블리싱 발표", "DEVELOPMENT UPDATE": "개발 소식", "TECHNICAL CONTRIBUTION": "기술 기여", "STUDIO ANNOUNCEMENT": "스튜디오 발표", "PROJECT UPDATE": "프로젝트 소식", "PUBLIC TEST": "공개 테스트", "STUDIO UPDATE": "스튜디오 근황", "TRAILER": "트레일러", "ANNOUNCEMENT": "작품 발표", "RELEASE": "출시", "SELECTION": "선정", "EXHIBITION": "전시"
+      "FROM THE STUDIO": "스튜디오에서",
+      "Studio news": "스튜디오 소식",
+      "Releases, exhibitions, selections and notes from the worlds we are building.": "출시, 전시, 선정 소식과 우리가 만드는 세계의 개발 기록입니다.",
+      "PUBLISHING · OPEN TO PITCHES": "퍼블리싱 · 제안 접수 중",
+      "Indie Games, Beyond Borders.": "국경을 넘어, 인디 게임과 함께.",
+      "Aurora Publishing welcomes indie game pitches for global market support. Aurora Studio also welcomes investor and strategic financing enquiries.": "Aurora Publishing은 글로벌 시장 진출을 위한 인디 게임 제안을 받습니다. Aurora Studio는 투자 및 전략적 자금 조달에 관한 문의도 환영합니다.",
+      "Read the publishing announcement ↗": "퍼블리싱 발표 읽기 (영어) ↗",
+      "ON THE WORLD STAGE": "세계 무대에서",
+      "EXHIBITION · TOKYO": "전시 · 도쿄",
+      "SELECTION · HONG KONG": "선정 · 홍콩",
+      "Tokyo Game Show 2025": "도쿄 게임쇼 2025",
+      "Project Numazu was featured with Aerosoft in the German Pavilion.": "Project Numazu를 Aerosoft와 함께 독일관에서 선보였습니다.",
+      "Selected for the Games Start-Ups Gallery.": "Games Start-Ups Gallery에 선정되었습니다.",
+      "Read the story ↗": "기사 읽기 (영어) ↗",
+      "ALL STORIES": "전체 소식",
+      "Trailers, press &amp; play sessions ↗": "트레일러 · 언론 보도 · 플레이 영상 ↗",
+      "SALE": "할인",
+      "PUBLISHING ANNOUNCEMENT": "퍼블리싱 발표",
+      "DEVELOPMENT UPDATE": "개발 소식",
+      "TECHNICAL CONTRIBUTION": "기술 기여",
+      "STUDIO ANNOUNCEMENT": "스튜디오 발표",
+      "PROJECT UPDATE": "프로젝트 소식",
+      "PUBLIC TEST": "공개 테스트",
+      "STUDIO UPDATE": "스튜디오 근황",
+      "TRAILER": "트레일러",
+      "ANNOUNCEMENT": "작품 발표",
+      "RELEASE": "출시",
+      "SELECTION": "선정",
+      "EXHIBITION": "전시",
+      "PROJECT ANNOUNCEMENT": "프로젝트 소식"
     },
     "article_title": "Revenant of Tsushima 공개 데모에 전 세계 크리에이터를 초대합니다",
     "article_summary": "공개 버티컬 슬라이스 데모를 itch.io에서 이용할 수 있습니다. Aurora Studio는 개발을 이어가며 전 세계 크리에이터와 플레이어의 피드백을 기다립니다.",
@@ -146,20 +505,66 @@
       "최신 다운로드 방법, 이용 조건과 개발 소식은 itch.io 페이지를 확인해 주세요. 직접 플레이하거나, 영상을 기록하거나, 구체적인 보고를 보내 주는 여러분의 관점은 앞으로의 여정에 도움이 됩니다."
     ],
     "stories": {
-      "project-numazu-steam-sale-oct-2026": ["Project Numazu, Steam 할인 참여: 10월 9일까지 25% 할인", "기간 한정 Steam 할인으로 OMSI 2 속 시즈오카현 누마즈시를 25% 저렴하게 만나 보세요."],
-      "aurora-publishing-indie-games-beyond-borders": ["Aurora Studio, 국경을 넘는 인디 게임 퍼블리싱으로 사업 확대", "Aurora Publishing이 인디 게임 제안을 받습니다. 스튜디오와 퍼블리싱의 장기 계획에 관한 투자 문의도 환영합니다."],
-      "aurora-openomsi-technical-contributions": ["Aurora Studio, openOMSI 기술 기여 확대", "Project Numazu를 실제 제작 규모의 호환성 테스트에 활용하며 오픈 소스 시뮬레이터의 수정과 아시아 언어 현지화에 기여합니다."],
-      "acg-partnerships-launch": ["Aurora Studio, 국경을 넘는 ACG 협업 서비스 시작", "홍콩을 기반으로 브랜드와 공간이 대만구, 일본 및 국제 시장과 연결되는 ACG 협업을 기획하도록 돕습니다."],
-      "a-day-in-the-depot": ["차량기지의 하루: Railway Depot: Operations & Empire", "운영 중인 차량기지를 움직이는 사람들과 의사결정을 살펴봅니다."],
-      "railway-depot-now-on-itch-io": ["Railway Depot, itch.io 개발 허브 개설", "프리 알파 빌드, 스크린샷과 철도 운영 시스템에 대한 피드백을 모으는 새로운 공간입니다."],
-      "revenant-of-tsushima-vertical-slice-public-test": ["Revenant of Tsushima 버티컬 슬라이스 공개 테스트 시작", "초기 플레이 빌드로 탐색, Ether Sight와 신사 의식의 일부를 경험할 수 있습니다."],
-      "project-numazu-tga-2026-fyc": ["Project Numazu, TGA 2026 For Your Consideration 캠페인", "심사에서의 검토를 요청하는 캠페인이며 후보 지명을 뜻하지 않습니다."],
-      "revenant-of-tsushima-teaser-and-support": ["Revenant of Tsushima 티저 공개", "팀이 첫 티저와 지속적인 개발을 지원하는 방법을 소개했습니다."],
-      "aurora-started-revenant-tsushima": ["Aurora Studio, Revenant of Tsushima 발표", "츠시마 메와와 함께 기이한 도카이도를 걷는 오리지널 1인칭 민속 공포 여정입니다."],
-      "project-numazu-is-officially-available-on-steam": ["Project Numazu, Steam 출시", "OMSI 2를 위해 재현한 누마즈시가 출시되었습니다."],
-      "omsi-2-add-on-project-numazu-steam-page-now-live": ["Project Numazu Steam 상점 페이지 공개", "출시를 앞두고 도시를 재현하는 시뮬레이션 작품을 소개했습니다."],
-      "aurora-studio-selected-for-siggraph-asia-2025": ["Project Numazu, SIGGRAPH Asia 2025 Games 선정", "Aurora Studio가 Project Numazu와 함께 홍콩 Games Start-Ups Gallery에 참여했습니다."],
-      "aurora-studio-in-tgs-2025": ["Project Numazu, 도쿄 게임쇼 2025 출품", "퍼블리셔 Aerosoft와 함께 독일관에서 Project Numazu를 선보였습니다."]
+      "project-numazu-steam-sale-oct-2026": [
+        "Project Numazu, Steam 할인 참여: 10월 9일까지 25% 할인",
+        "기간 한정 Steam 할인으로 OMSI 2 속 시즈오카현 누마즈시를 25% 저렴하게 만나 보세요."
+      ],
+      "aurora-publishing-indie-games-beyond-borders": [
+        "Aurora Studio, 국경을 넘는 인디 게임 퍼블리싱으로 사업 확대",
+        "Aurora Publishing이 인디 게임 제안을 받습니다. 스튜디오와 퍼블리싱의 장기 계획에 관한 투자 문의도 환영합니다."
+      ],
+      "aurora-openomsi-technical-contributions": [
+        "Aurora Studio, openOMSI 기술 기여 확대",
+        "Project Numazu를 실제 제작 규모의 호환성 테스트에 활용하며 오픈 소스 시뮬레이터의 수정과 아시아 언어 현지화에 기여합니다."
+      ],
+      "acg-partnerships-launch": [
+        "Aurora Studio, 국경을 넘는 ACG 협업 서비스 시작",
+        "홍콩을 기반으로 브랜드와 공간이 대만구, 일본 및 국제 시장과 연결되는 ACG 협업을 기획하도록 돕습니다."
+      ],
+      "a-day-in-the-depot": [
+        "차량기지의 하루: Railway Depot: Operations & Empire",
+        "운영 중인 차량기지를 움직이는 사람들과 의사결정을 살펴봅니다."
+      ],
+      "railway-depot-now-on-itch-io": [
+        "Railway Depot, itch.io 개발 허브 개설",
+        "프리 알파 빌드, 스크린샷과 철도 운영 시스템에 대한 피드백을 모으는 새로운 공간입니다."
+      ],
+      "revenant-of-tsushima-vertical-slice-public-test": [
+        "Revenant of Tsushima 버티컬 슬라이스 공개 테스트 시작",
+        "초기 플레이 빌드로 탐색, Ether Sight와 신사 의식의 일부를 경험할 수 있습니다."
+      ],
+      "project-numazu-tga-2026-fyc": [
+        "Project Numazu, TGA 2026 For Your Consideration 캠페인",
+        "심사에서의 검토를 요청하는 캠페인이며 후보 지명을 뜻하지 않습니다."
+      ],
+      "revenant-of-tsushima-teaser-and-support": [
+        "Revenant of Tsushima 티저 공개",
+        "팀이 첫 티저와 지속적인 개발을 지원하는 방법을 소개했습니다."
+      ],
+      "aurora-started-revenant-tsushima": [
+        "Aurora Studio, Revenant of Tsushima 발표",
+        "츠시마 메와와 함께 기이한 도카이도를 걷는 오리지널 1인칭 민속 공포 여정입니다."
+      ],
+      "project-numazu-is-officially-available-on-steam": [
+        "Project Numazu, Steam 출시",
+        "OMSI 2를 위해 재현한 누마즈시가 출시되었습니다."
+      ],
+      "omsi-2-add-on-project-numazu-steam-page-now-live": [
+        "Project Numazu Steam 상점 페이지 공개",
+        "출시를 앞두고 도시를 재현하는 시뮬레이션 작품을 소개했습니다."
+      ],
+      "aurora-studio-selected-for-siggraph-asia-2025": [
+        "Project Numazu, SIGGRAPH Asia 2025 Games 선정",
+        "Aurora Studio가 Project Numazu와 함께 홍콩 Games Start-Ups Gallery에 참여했습니다."
+      ],
+      "aurora-studio-in-tgs-2025": [
+        "Project Numazu, 도쿄 게임쇼 2025 출품",
+        "퍼블리셔 Aerosoft와 함께 독일관에서 Project Numazu를 선보였습니다."
+      ],
+      "revenant-of-tsushima-steam-store-page-live": [
+        "Revenant of Tsushima Steam 스토어 페이지 공개",
+        "Aurora Studio가 개발 중인 민속 공포 게임 Revenant of Tsushima의 Steam 스토어 페이지가 공개되었습니다. 위시리스트에 추가하고 새 소식을 팔로우해 주세요."
+      ]
     }
   }
 }
