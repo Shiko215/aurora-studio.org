@@ -1,0 +1,95 @@
+{
+  "en": {
+    "nav": "Latest coverage",
+    "title": "Revenant of Tsushima enters its Steam chapter.",
+    "intro": "Steam store-page coverage, original reporting links and regional discovery. Explore the latest milestone for our Japanese folk-horror game.",
+    "gnn": "Steam store page revealed",
+    "gdesc": "Bahamut GNN covered the Steam store-page announcement and latest trailer for Revenant of Tsushima.",
+    "p": "The announcement reaches PChome",
+    "pd": "PChome Online News republished the GNN article, bringing the same announcement to another news portal.",
+    "list": "Listed in Japan’s new Steam pages",
+    "ld": "3Days Steam included the game in its 1 November new store-page roundup for Japanese-supported titles.",
+    "labels": [
+      "PRESS ANNOUNCEMENT COVERAGE",
+      "GNN ARTICLE REPRINT",
+      "NEW STORE-PAGE LISTING"
+    ],
+    "read": [
+      "Read at Bahamut GNN",
+      "Read the PChome reprint",
+      "Browse 3Days Steam"
+    ],
+    "steam": "Wishlist on Steam",
+    "kit": "Open the RoT press kit"
+  },
+  "zh-hant": {
+    "nav": "最新媒體動態",
+    "title": "《津島・魂鬼》踏入 Steam 新階段。",
+    "intro": "從 Steam 商店頁公開報道、新聞轉載到日本新作清單，探索這款和風民俗恐怖作品的最新動態。",
+    "gnn": "Steam 商店頁正式公開",
+    "gdesc": "巴哈姆特 GNN 刊登《津島・魂鬼》Steam 商店頁公開消息，介紹最新預告及遊戲內容。",
+    "p": "上線消息登上 PChome",
+    "pd": "PChome Online 新聞轉載同一篇 GNN 文章，將商店頁公開消息帶到另一個新聞平台。",
+    "list": "收錄於日本 Steam 新作清單",
+    "ld": "3Days Steam 將本作列入 11 月 1 日支援日文的新建 Steam 商店頁清單。",
+    "labels": [
+      "發布消息報道",
+      "GNN 文章轉載",
+      "新商店頁清單收錄"
+    ],
+    "read": [
+      "閱讀巴哈姆特 GNN 原文",
+      "閱讀 PChome 轉載",
+      "瀏覽 3Days Steam"
+    ],
+    "steam": "加入 Steam 願望清單",
+    "kit": "開啟 RoT 媒體資料包"
+  },
+  "zh-hans": {
+    "nav": "最新媒体动态",
+    "title": "《津岛・魂鬼》迈入 Steam 新阶段。",
+    "intro": "从 Steam 商店页公开报道、新闻转载到日本新作清单，了解这款和风民俗恐怖作品的最新动态。",
+    "gnn": "Steam 商店页正式公开",
+    "gdesc": "巴哈姆特 GNN 刊登《津岛・魂鬼》Steam 商店页公开消息，介绍最新预告及游戏内容。",
+    "p": "上线消息登上 PChome",
+    "pd": "PChome Online 新闻转载同一篇 GNN 文章，将商店页公开消息带到另一个新闻平台。",
+    "list": "收录于日本 Steam 新作清单",
+    "ld": "3Days Steam 将本作列入 11 月 1 日支持日文的新建 Steam 商店页清单。",
+    "labels": [
+      "发布消息报道",
+      "GNN 文章转载",
+      "新商店页清单收录"
+    ],
+    "read": [
+      "阅读巴哈姆特 GNN 原文",
+      "阅读 PChome 转载",
+      "浏览 3Days Steam"
+    ],
+    "steam": "加入 Steam 愿望单",
+    "kit": "打开 RoT 媒体资料包"
+  },
+  "ja": {
+    "nav": "最新のメディア掲載",
+    "title": "『津島・魂鬼』、Steamでの新たな一歩。",
+    "intro": "Steamストアページ公開のニュース、転載記事、日本語対応作品の新着リストをご紹介します。",
+    "gnn": "Steamストアページを公開",
+    "gdesc": "巴哈姆特 GNNが『津島・魂鬼』のSteamストアページ公開と最新映像、ゲーム内容を紹介しました。",
+    "p": "PChomeにも公開ニュースを掲載",
+    "pd": "PChome Online Newsが同じGNNの記事を転載し、別のニュースポータルでも公開情報を届けています。",
+    "list": "日本語対応のSteam新着リストに掲載",
+    "ld": "3Days Steamの11月1日付新規ストアページ一覧に、日本語対応タイトルとして掲載されました。",
+    "labels": [
+      "発表ニュース",
+      "GNN記事の転載",
+      "新規ストアページ一覧"
+    ],
+    "read": [
+      "GNNの記事を読む",
+      "PChomeの転載記事を読む",
+      "3Days Steamを見る"
+    ],
+    "steam": "Steamでウィッシュリストに追加",
+    "kit": "RoTプレスキットを開く"
+  }
+}
+

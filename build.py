@@ -550,3 +550,7 @@ generate_careers_pages()
 
 from news_i18n import generate as generate_news_pages
 generate_news_pages()
+
+from media_coverage import generate as generate_media_coverage
+generate_media_coverage()
+
