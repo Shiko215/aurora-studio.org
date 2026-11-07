@@ -213,3 +213,15 @@
 .event-card>div{text-shadow:0 1px 2px rgba(0,0,0,.6)}
 .event-card{display:flex;flex-direction:column;justify-content:flex-end}
 .event-card>div{position:relative;left:auto;right:auto;bottom:auto;padding:4.5rem 1.4rem 1.4rem}
+
+/* Optional support for Revenant of Tsushima. */
+.rot-membership{background:#f2eee7;border-top:1px solid #c8bca7;color:#1f2630}
+.rot-membership-inner{max-width:1100px;margin:auto}
+.rot-membership h2{max-width:900px;font-size:clamp(1.8rem,4vw,3.5rem);line-height:1.15;overflow-wrap:anywhere}
+.rot-membership .eyebrow{color:#65502f}
+.rot-membership-copy{max-width:780px;line-height:1.85;margin:24px 0}
+.rot-membership-note{max-width:780px;line-height:1.8;font-size:.9rem;color:#514b43;margin-top:22px}
+.rot-membership .actions{display:flex;flex-wrap:wrap;gap:12px}
+.rot-membership .button{background:#1f2630;color:#fff;white-space:normal;text-align:center}
+#demo iframe{max-width:100%;border:0}
+@media(max-width:600px){.rot-membership .actions{flex-direction:column;align-items:stretch}.rot-membership .button{width:100%}}

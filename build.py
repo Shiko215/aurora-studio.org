@@ -1,6 +1,7 @@
 from pathlib import Path
 from html import escape
 import json
+from rot_membership import section as membership_section
 R=Path(__file__).parent
 nav='<a href="/">Home</a><a href="/publishing/">Publishing</a><a href="/project/">Projects</a><a href="/services/">Services</a><a href="/acg-partnerships/">ACG Partnerships</a><a href="/talents/">Talents</a><a href="/news/">News</a><a href="/media/">Media</a><a href="/about/">About</a><a href="/contact/">Contact</a>'
 languages='<div class="lang"><a href="/" lang="en">EN</a><a href="/zh-hant/" lang="zh-Hant">繁</a><a href="/zh-hans/" lang="zh-Hans">简</a><a href="/ja/" lang="ja">日</a><a href="/ko/" lang="ko">한</a></div>'
@@ -61,6 +62,10 @@ def acg_service_schema(url, title, description):
          'areaServed':[{'@type':'Place','name':name} for name in ('Hong Kong','Greater Bay Area','Japan')]}
 
 def page(title,description,content,filename, schema=None, lang='en'):
+ if filename in ('index.html', 'project/revenant-of-tsushima/index.html'):
+  content += membership_section('en')
+ elif filename == 'support/index.html':
+  content += membership_section('en')
  alternates = '<link rel="alternate" hreflang="en" href="https://www.aurora-studio.org/"><link rel="alternate" hreflang="zh-Hant" href="https://www.aurora-studio.org/zh-hant/"><link rel="alternate" hreflang="zh-Hans" href="https://www.aurora-studio.org/zh-hans/"><link rel="alternate" hreflang="ja" href="https://www.aurora-studio.org/ja/"><link rel="alternate" hreflang="ko" href="https://www.aurora-studio.org/ko/"><link rel="alternate" hreflang="x-default" href="https://www.aurora-studio.org/">' if filename == 'index.html' else ''
  path = filename.replace('index.html','')
  canonical = f'https://www.aurora-studio.org/{path}'

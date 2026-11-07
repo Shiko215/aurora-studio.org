@@ -161,6 +161,7 @@ def generate():
     index_shell = (ROOT / 'news/index.html').read_text(encoding='utf-8')
     article_shell = (ROOT / 'news' / SLUG / 'index.html').read_text(encoding='utf-8')
     index_main = re.search(r'<main id="main">.*?</main>', index_shell, re.S)[0]
+    index_main = re.sub(r'<section class="section rot-membership-news">.*?</section>', '', index_main, flags=re.S)
     paths = []
     for code, copy in copies.items():
         listing = translated_listing(index_main, code, copy)
@@ -219,6 +220,8 @@ def generate():
         if '<loc>' + url + '</loc>' not in text:
             text = text.replace('</urlset>', '<url><loc>' + url + '</loc></url>\n</urlset>')
     sitemap.write_text(text, encoding='utf-8')
+    from membership_news import generate as generate_membership_news
+    generate_membership_news()
 
 
 if __name__ == '__main__':
