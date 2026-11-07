@@ -4,6 +4,7 @@ from html import escape, unescape
 import json
 import re
 from rot_membership import section
+from date_format import normalize_dates
 
 ROOT = Path(__file__).parent
 BASE = 'https://www.aurora-studio.org'
@@ -102,17 +103,17 @@ def generate():
   text=listing.read_text(encoding='utf-8')
   text=remove_feature(text)
   category={'en':'DEVELOPMENT SUPPORT','zh-hant':'開發募資','zh-hans':'开发筹资','ja':'開発支援','ko':'개발 후원'}[code]
-  date={'en':'07 NOV 2026','zh-hant':'2026年11月7日','zh-hans':'2026年11月7日','ja':'2026年11月7日','ko':'2026년 11월 7일'}[code]
+  date='2026-11-07'
   card='<article class="rot-membership-news"><time datetime="2026-11-07">'+date+'</time><div><span>'+category+'</span><h2>'+escape(title)+'</h2><p>'+escape(summary)+'</p><a href="'+route(code)+'">'+escape(read)+' ↗</a></div></article>'
   # Reuse the existing archive row structure and styles, including its date column.
   text=text.replace('<section class="section news-list">','<section class="section news-list">'+card,1)
   assert card in text
-  listing.write_text(update_archive_data(text,code),encoding='utf-8')
+  listing.write_text(normalize_dates(update_archive_data(text,code)),encoding='utf-8')
   home=ROOT/('index.html' if code=='en' else code+'/index.html')
   text=home.read_text(encoding='utf-8')
   text=remove_feature(text)
   text=text.replace('</main>','<section class="section news-list rot-membership-feature">'+card+'</section></main>',1)
-  home.write_text(text,encoding='utf-8')
+  home.write_text(normalize_dates(text),encoding='utf-8')
   sitemap=ROOT/'sitemap.xml';text=sitemap.read_text(encoding='utf-8')
   if '<loc>'+url+'</loc>' not in text:
    text=text.replace('</urlset>','<url><loc>'+url+'</loc></url>\n</urlset>')

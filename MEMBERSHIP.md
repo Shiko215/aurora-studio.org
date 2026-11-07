@@ -51,6 +51,9 @@ campaign destinations and benefits before publishing any specific rewards.
   row count and ItemList are updated to match the visible entries.
 - New and adjacent archive rows have matching computed typography, column alignment,
   padding and borders in all five languages at both viewport sizes.
+- All full calendar date labels use `YYYY-MM-DD` across languages. Month-only
+  labels use `YYYY-MM`; English month abbreviations are removed from date labels.
+  `date_format.py` applies the same rule during site/news/media generation.
 - Existing repository tests: 6 passed, 2 failed. Both failures also occur at the
   unchanged upstream commit: Windows case-insensitive `Ads.txt` checking and an
   archive test fixed at 15 stories (upstream already had 16). The new announcement
