@@ -162,6 +162,7 @@ def generate():
     article_shell = (ROOT / 'news' / SLUG / 'index.html').read_text(encoding='utf-8')
     index_main = re.search(r'<main id="main">.*?</main>', index_shell, re.S)[0]
     index_main = re.sub(r'<section class="section rot-membership-news">.*?</section>', '', index_main, flags=re.S)
+    index_main = re.sub(r'<article class="rot-membership-news">.*?</article>', '', index_main, flags=re.S)
     paths = []
     for code, copy in copies.items():
         listing = translated_listing(index_main, code, copy)

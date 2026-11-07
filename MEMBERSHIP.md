@@ -8,7 +8,8 @@ or delivery dates are promised without verification of the chosen platform tier.
 ## Pages and maintenance
 
 - Five localized homepages: RoT supporter section and news feature.
-- Five localized news indexes: feature linking to the matching translated article.
+- Five localized news indexes: standard archive row linking to the translated article,
+  with the existing date column, category, heading, divider and spacing.
 - Five articles at `[locale]/news/revenant-of-tsushima-steam-page-development-support/`
   (no locale prefix for English), with reciprocal language links, canonical URLs,
   localized social metadata and NewsArticle data. Articles are dated November 7, 2026;
@@ -46,11 +47,14 @@ campaign destinations and benefits before publishing any specific rewards.
   features, exact destination URLs, no horizontal overflow, unique IDs, valid
   article JSON data, all five language alternates, no JavaScript errors.
 - Screenshot review at 390px and 1280px.
-- Scoped announcement generation is repeatable without duplicate features.
+- Scoped announcement generation is repeatable without duplicate features. The archive
+  row count and ItemList are updated to match the visible entries.
+- New and adjacent archive rows have matching computed typography, column alignment,
+  padding and borders in all five languages at both viewport sizes.
 - Existing repository tests: 6 passed, 2 failed. Both failures also occur at the
   unchanged upstream commit: Windows case-insensitive `Ads.txt` checking and an
-  archive test fixed at 15 stories (upstream now has 16). The new announcement is
-  a separate feature above the existing archive.
+  archive test fixed at 15 stories (upstream already had 16). The new announcement
+  is included in the archive count and structured data.
 
 Publishing remains separate from this review branch. After deployment, open all
 five public articles and check both membership destinations manually.

@@ -1,6 +1,6 @@
 """Generate the Steam-page / optional development-support announcement."""
 from pathlib import Path
-from html import escape
+from html import escape, unescape
 import json
 import re
 from rot_membership import section
@@ -45,6 +45,30 @@ COPY = {
 def route(code):
  return ('' if code == 'en' else '/'+code)+'/news/'+SLUG+'/'
 
+def remove_feature(text):
+ text=re.sub(r'<section class="section rot-membership-news">.*?</section>','',text,flags=re.S)
+ text=re.sub(r'<section class="section news-list rot-membership-feature">.*?</section>','',text,flags=re.S)
+ return re.sub(r'<article class="rot-membership-news">.*?</article>','',text,flags=re.S)
+
+def update_archive_data(text, code):
+ """Keep the archive count and ItemList aligned with its visible rows."""
+ archive=re.search(r'<section class="section news-list">(.*?)</section>',text,re.S)[1]
+ rows=re.findall(r'<article(?: class="rot-membership-news")?>.*?</article>',archive,re.S)
+ graph_match=re.search(r'<script type="application/ld\+json">(.*?)</script>',text,re.S)
+ graph=json.loads(graph_match[1])
+ items=[]
+ for position,row in enumerate(rows,1):
+  href=re.search(r'<a href="([^"]+)"',row)[1]
+  title=re.search(r'<h2>(.*?)</h2>',row,re.S)[1]
+  items.append({'@type':'ListItem','position':position,'name':unescape(re.sub('<[^>]+>','',title)),'url':BASE+href})
+ for node in graph['@graph']:
+  if node.get('@type')=='ItemList':
+   node['numberOfItems']=len(items)
+   node['itemListElement']=items
+ text=text[:graph_match.start(1)]+json.dumps(graph,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')+text[graph_match.end(1):]
+ labels={'en':'{n} updates','zh-hant':'共 {n} 則消息','zh-hans':'共 {n} 则消息','ja':'全 {n} 件','ko':'소식 {n}건'}
+ return re.sub(r'<span>(?:\d+ updates|共 \d+ 則消息|共 \d+ 则消息|全 \d+ 件|소식 \d+건)</span>','<span>'+labels[code].format(n=len(items))+'</span>',text)
+
 def generate():
  for code, (lang,title,summary,intro,funding,thanks,steam,back,read) in COPY.items():
   shell=(ROOT/('' if code=='en' else code)/'news/revenant-of-tsushima-demo-creator-outreach/index.html').read_text(encoding='utf-8')
@@ -76,16 +100,18 @@ def generate():
   path.write_text(text,encoding='utf-8')
   listing=ROOT/index.strip('/')/'index.html'
   text=listing.read_text(encoding='utf-8')
-  text=re.sub(r'<section class="section rot-membership-news">.*?</section>','',text,flags=re.S)
-  card='<section class="section rot-membership-news"><time datetime="2026-11-07">2026-11-07</time><h2>'+escape(title)+'</h2><p>'+escape(summary)+'</p><a href="'+route(code)+'">'+escape(read)+' ↗</a></section>'
-  # Separate feature section preserves existing archive card translations and counts.
-  text=text.replace('<section class="section news-list">',card+'<section class="section news-list">',1)
+  text=remove_feature(text)
+  category={'en':'DEVELOPMENT SUPPORT','zh-hant':'開發募資','zh-hans':'开发筹资','ja':'開発支援','ko':'개발 후원'}[code]
+  date={'en':'07 NOV 2026','zh-hant':'2026年11月7日','zh-hans':'2026年11月7日','ja':'2026年11月7日','ko':'2026년 11월 7일'}[code]
+  card='<article class="rot-membership-news"><time datetime="2026-11-07">'+date+'</time><div><span>'+category+'</span><h2>'+escape(title)+'</h2><p>'+escape(summary)+'</p><a href="'+route(code)+'">'+escape(read)+' ↗</a></div></article>'
+  # Reuse the existing archive row structure and styles, including its date column.
+  text=text.replace('<section class="section news-list">','<section class="section news-list">'+card,1)
   assert card in text
-  listing.write_text(text,encoding='utf-8')
+  listing.write_text(update_archive_data(text,code),encoding='utf-8')
   home=ROOT/('index.html' if code=='en' else code+'/index.html')
   text=home.read_text(encoding='utf-8')
-  text=re.sub(r'<section class="section rot-membership-news">.*?</section>','',text,flags=re.S)
-  text=text.replace('</main>',card+'</main>',1)
+  text=remove_feature(text)
+  text=text.replace('</main>','<section class="section news-list rot-membership-feature">'+card+'</section></main>',1)
   home.write_text(text,encoding='utf-8')
   sitemap=ROOT/'sitemap.xml';text=sitemap.read_text(encoding='utf-8')
   if '<loc>'+url+'</loc>' not in text:
