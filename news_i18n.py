@@ -8,6 +8,7 @@ from html import escape, unescape
 import ast
 import json
 import re
+from date_format import normalize_dates
 
 ROOT = Path(__file__).parent
 BASE = 'https://www.aurora-studio.org'
@@ -162,6 +163,7 @@ def generate():
     article_shell = (ROOT / 'news' / SLUG / 'index.html').read_text(encoding='utf-8')
     index_main = re.search(r'<main id="main">.*?</main>', index_shell, re.S)[0]
     index_main = re.sub(r'<section class="section rot-membership-news">.*?</section>', '', index_main, flags=re.S)
+    index_main = re.sub(r'<article class="rot-membership-news">.*?</article>', '', index_main, flags=re.S)
     paths = []
     for code, copy in copies.items():
         listing = translated_listing(index_main, code, copy)
@@ -172,7 +174,7 @@ def generate():
         ):
             path = ROOT / route(code, is_article).strip('/') / 'index.html'
             path.parent.mkdir(parents=True, exist_ok=True)
-            text = metadata(shell, main, code, heading, description, is_article, copy)
+            text = normalize_dates(metadata(shell, main, code, heading, description, is_article, copy))
             paths.append((path, code, is_article))
             path.write_text(text, encoding='utf-8')
 

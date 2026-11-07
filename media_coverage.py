@@ -70,7 +70,8 @@ def generate():
             html = html.replace(marker, section + "\n" + marker, 1)
         if 'href="#latest-coverage"' not in html:
             html = html.replace('<a href="#highlights">', f'<a href="#latest-coverage">{escape(c["nav"])}</a><a href="#highlights">', 1)
-        path.write_text(html, encoding="utf-8")
+        from date_format import normalize_dates
+        path.write_text(normalize_dates(html), encoding="utf-8")
 
 if __name__ == "__main__":
     generate()
