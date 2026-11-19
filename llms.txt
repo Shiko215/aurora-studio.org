@@ -26,8 +26,6 @@ Contact: https://www.aurora-studio.org/contact/
 - Revenant of Tsushima: https://www.aurora-studio.org/project/revenant-of-tsushima/
   First-person Japanese folk horror game set around an Edo-period journey. In development.
   Official project site: https://revenant-tsushima.aurora-studio.org/
-- Railway Depot: Operations & Empire: https://www.aurora-studio.org/project/railway-depot/
-  Railway depot operations and management simulation. Pre-alpha.
 - Aurora Engine: https://www.aurora-studio.org/project/aurora-engine/
   Modular C++ and Unreal Engine framework for NPC perception, memory, decisions, and actions.
 
